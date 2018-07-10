@@ -1,0 +1,10 @@
+#
+ab          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger ab
+cd          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger cd
+ef          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger ef
+gh          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger gh
+#
+ab_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger ab_burst
+cd_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger cd_burst
+ef_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger ef_burst
+gh_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 vger gh_burst

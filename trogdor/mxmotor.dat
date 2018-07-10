@@ -1,0 +1,93 @@
+!load epics.mxo
+!load epics_aps.mxo
+!load epics_pmac_biocat.mxo
+#
+# Storage ring parameters
+#
+ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
+ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
+undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
+#
+# 18-ID undulator control
+#
+gap      device motor aps_gap "" "" 0 0 11 200 0 -1 -1 1 0 mm 18 1
+id_ev    device motor aps_gap "" "" 0 0 3.191 30000 -1 -1 0 1000 0 eV 18 2
+taper    device motor aps_gap "" "" 0 0 0 1000 0 -1 -1 1 0 mm 18 3
+taper_ev device motor aps_gap "" "" 0 0 0 1000000 -1 -1 0 1000 0 eV 18 4
+#
+# Motor aliases
+#
+!include mxmotor_aliases.dat
+#
+# EPICS BioCAT PMAC databases
+#
+!include pmac.dat
+#
+# APS motor record.
+#
+!include stepper.dat
+#
+# BioCAT mirror positioner pseudomotor
+#
+####raw_mirror_pos device motor biocat_mirror_positioner "" "" 0 0 -1.0e38 1.0e38 0 -1 -1 1 0 deg 6 mirror_angle downstream_angle collimator_h_height collimator_y_center table_y_base table_pitch 1.0000 2.0000 -3.3398 -5.9374 -10.0942 -2.0000
+####mirror_pos device motor segmented_move "" "" 0 0 -1.0e38 1.0e38 0 -1 -1 1 0 deg raw_mirror_pos 10
+#
+# Struck multichannel scaler
+#
+!include epics_mcs.dat
+#
+# Joerger scaler 2
+#
+!include epics_scaler2.dat
+#
+# CRL motor redefinitions
+#
+!include crl.dat
+#
+# PowerPMAC MX-controlled motors
+#
+!include powerpmac.dat
+#
+# Geobrick motors
+#
+!include geobrick.dat
+#
+# Newport motors
+#
+!include newport_client.dat
+#!include newport.dat
+#!include newport_epics.dat
+#
+# Phase contrast PIN diode (disabled CUS 2017-10-09)
+#
+##!include phase_contrast.dat
+#
+# SRS DG645 digital delay generator
+#
+!include dg645_client.dat
+#
+# Include Keithley database
+#
+###!include keithleys.dat
+# 2017-10-02 - Switch to k428_client.dat (W. Lavender)
+# The following is an implementation of Keithley support using MX.  It is
+# extremely slow, but this could probably be drastically improved by a
+# redesign of the MX keithley428 driver.
+#
+!include k428_client.dat
+#
+# Pseudomotors and variables used by MX XAFS scans
+#
+edge_energy variable net_variable net_double "" "" vger edge_energy.value 1 1 0
+e_minus_e0  device motor delta_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 keV energy edge_energy
+k           device motor xafs_wavenumber "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 A energy
+#
+# Additional timer records
+#
+dark_timer device timer timer_fanout "" "" 2 joerger_timer mcs_timer
+timer1     device timer timer_fanout "" "" 2 joerger_timer mcs_timer
+soft_timer device timer soft_timer "" ""
+#
+# Test motor record
+#
+test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000

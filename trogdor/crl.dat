@@ -1,0 +1,7 @@
+#
+# CRL Stepper motors
+#
+crl_yaw             device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m18
+crl_tilt            device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 0.05 0 mm 18ID:e:m19
+crly                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 0.2 0 mm 18ID:e:m20
+crlx                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 2 0 mm 18ID:e:m23

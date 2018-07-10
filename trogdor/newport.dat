@@ -1,0 +1,48 @@
+!load newport_xps.mxo
+#
+# C8 Newport motors (via direct MX driver)
+#
+xpsc8 interface controller newport_xps "" "" 164.54.204.65 5001 0.0 Administrator Administrator 0x0
+newport1 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP1.POSITIONER
+newport2 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP2.POSITIONER
+newport3 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP3.POSITIONER
+#newport4 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP4.POSITIONER
+#newport5 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP5.POSITIONER
+newport6 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP6.POSITIONER
+#newport7 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP7.POSITIONER
+#newport8 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP8.POSITIONER
+#
+# alternative names (CUS 2016_10_13)
+#
+np1 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP1.POSITIONER
+np2 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP2.POSITIONER
+np3 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP3.POSITIONER
+#np4 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP4.POSITIONER
+#np5 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP5.POSITIONER
+np6 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP6.POSITIONER
+#np7 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP7.POSITIONER
+#np8 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP8.POSITIONER
+#
+# Q8 Newport motors (via direct MX driver)
+#
+xpsq8 interface controller newport_xps "" "" 164.54.204.71 5001 0.0 Administrator Administrator 0x0
+#newport9 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP1.POSITIONER
+#newport10 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP2.POSITIONER
+#newport11 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP3.POSITIONER
+#newport12 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP4.POSITIONER
+#newport13 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP5.POSITIONER
+#newport14 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP6.POSITIONER
+#newport15 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP7.POSITIONER
+###newport16 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP8.POSITIONER
+####newport16 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group8.Pos
+#
+# alternative names (CUS 2016_10_13)
+#
+#np9 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP1.POSITIONER
+#np10 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP2.POSITIONER
+#np11 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP3.POSITIONER
+#np12 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP4.POSITIONER
+#np13 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP5.POSITIONER
+#np14 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP6.POSITIONER
+#np15 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 GROUP7.POSITIONER
+np16 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group8.Pos
