@@ -8,7 +8,7 @@ Setup:
 4. Commit the current database.
 5. Backup the current database by copying /opt/mx/etc to /opt/mx/etc_bk
 6. Remove the contents of /opt/mx/etc
-7. Add softlinks to to the versions in the git by using the command: sudo find /opt/mx_databases/trogdor -exec ln -s {} \; (must be run in /opt/mx/etc)
+7. Add softlinks to to the versions in the git by using the command: sudo find /opt/mx_databases/trogdor -exec ln -s {} \\; (must be run in /opt/mx/etc)
 
 Modifying:
 1. Modify the files in the git clone
