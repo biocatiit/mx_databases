@@ -1,2 +1,2 @@
 # mx_databases
-Contains MX databases for t he BioCAT beamline
+Contains MX databases for the BioCAT beamline
