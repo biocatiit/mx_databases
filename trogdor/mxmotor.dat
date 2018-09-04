@@ -31,7 +31,7 @@
 !include scl_epics_mcs.dat
 #
 # Joerger scaler 2
-!include epics_scaler2.dat
+!include scl_epics_scaler2.dat
 #
 #
 ######################### AMPS #########################

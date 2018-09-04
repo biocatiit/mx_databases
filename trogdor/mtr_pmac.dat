@@ -10,12 +10,12 @@ mono2_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 
 #
 # Table position
 #
-table_y_base        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  YB: 0.1 0.1
-table_x             device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  X:  0.1 0.1
-table_angle         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  St:  TBSt 24XYZ4  A:  0.1 0.1
-table_y_fine        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  Ps:  TBPs 24XYZ4  Y:  0.1 0.1
-table_pitch         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  P:  0.1 0.1
-table_roll          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  R:  0.1 0.1
+# table_y_base        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  YB: 0.1 0.1
+# table_x             device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  X:  0.1 0.1
+# table_angle         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  St:  TBSt 24XYZ4  A:  0.1 0.1
+# table_y_fine        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  Ps:  TBPs 24XYZ4  Y:  0.1 0.1
+# table_pitch         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  P:  0.1 0.1
+# table_roll          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  R:  0.1 0.1
 #
 # Huber Slits
 #

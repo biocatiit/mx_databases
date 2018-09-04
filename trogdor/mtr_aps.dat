@@ -4,5 +4,3 @@ gap      device motor aps_gap "" "" 0 0 11 200 0 -1 -1 1 0 mm 18 1
 id_ev    device motor aps_gap "" "" 0 0 3.191 30000 -1 -1 0 1000 0 eV 18 2
 taper    device motor aps_gap "" "" 0 0 0 1000 0 -1 -1 1 0 mm 18 3
 taper_ev device motor aps_gap "" "" 0 0 0 1000000 -1 -1 0 1000 0 eV 18 4
-#
-#
