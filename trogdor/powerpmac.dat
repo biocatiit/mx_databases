@@ -46,7 +46,7 @@ ds_upst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powe
 ds_dnst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_171 ds_dnst
 ds_vert    device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um powerpmac_171 ds_vert
 #
-# The coordinated_angle pseudomotor is used to compute the positions of 
+# The coordinated_angle pseudomotor is used to compute the positions of
 # the downstream angle.  The segmented_move pseudomotor is used to break
 # up the move into a bunch of small moves. Base record now on the powerpmac_171
 # server
@@ -86,7 +86,7 @@ mi_ellip   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps p
 #
 # Monochromator 1 motors on powerpmac_173
 #
-!include mono1_powerpmac.dat
+!include powerpmac_mono1.dat
 #
 #
 # BioCAT beamline angle.
