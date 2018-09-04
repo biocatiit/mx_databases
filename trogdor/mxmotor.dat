@@ -2,22 +2,12 @@
 !load epics_aps.mxo
 !load epics_pmac_biocat.mxo
 #
-# Storage ring parameters
-#
-ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
-ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
-undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
-#
-# 18-ID undulator control
-#
-gap      device motor aps_gap "" "" 0 0 11 200 0 -1 -1 1 0 mm 18 1
-id_ev    device motor aps_gap "" "" 0 0 3.191 30000 -1 -1 0 1000 0 eV 18 2
-taper    device motor aps_gap "" "" 0 0 0 1000 0 -1 -1 1 0 mm 18 3
-taper_ev device motor aps_gap "" "" 0 0 0 1000000 -1 -1 0 1000 0 eV 18 4
-#
 #
 ######################### MOTORS #########################
-# PowerPMAC MX-controlled motors
+# 18-ID undulator control
+!include mtr_aps.dat
+#
+# PowerPMAC motors
 !include mtr_powerpmac.dat
 #
 # Geobrick motors
@@ -26,17 +16,14 @@ taper_ev device motor aps_gap "" "" 0 0 0 1000000 -1 -1 0 1000 0 eV 18 4
 # Newport motors
 !include mtr_newport.dat
 #
-# EPICS BioCAT PMAC databases
+# EPICS BioCAT PMAC motors
 !include mtr_pmac.dat
 #
-# APS motor record.
+# EPICS Step-pack motors.
 !include mtr_steppak.dat
 #
 # Motor aliases
-!include mxmotor_aliases.dat
-#
-# CRL motor redefinitions
-!include crl.dat
+!include mtr_aliases.dat
 #
 #
 ######################### SCALERS #########################
@@ -65,6 +52,14 @@ soft_timer device timer soft_timer "" ""
 #
 #
 ######################### OTHER #########################
+#
+# Storage ring parameters
+#
+ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
+ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
+undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
+#
+#
 # Phase contrast PIN diode (disabled CUS 2017-10-09)
 ##!include phase_contrast.dat
 #

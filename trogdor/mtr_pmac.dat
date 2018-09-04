@@ -1,23 +1,4 @@
 #
-# Primary Aperture
-#
-##primary_aperture_x  device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: PA:  St:  PASt 20XY4   X:  0.1 0.1
-##primary_aperture_y  device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: PA:  St:  PASt 20XY4   Y:  0.1 0.1
-#
-# Vertical White Beam Slits
-#
-##filters_y1          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: FI:  Ar:  FIAr 20XY4   Y1: 0.1 0.1
-##filters_y2          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: FI:  Ar:  FIAr 20XY4   Y2: 0.1 0.1
-#
-# Monochromator 1 is now in the powerpmac database
-#
-##mono1_energy        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 keV  18ID: MO1: En:  MOEn 24XYZ4  E:  0.1 0.1
-##mono1_wavelength    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 A    18ID: MO1: En:  MOEn 24XYZ4  L:  0.1 0.1
-##mono1_tune          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO1: Tn:  MOTn 28XYUV4 N:  0.1 0.1
-##mono1_twist         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO1: Tn:  MOTn 28XYUV4 S:  0.1 0.1
-##mono1_yaw           device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO1: Yw:  MOYw 20XU4   W:  0.1 0.1
-##mono1_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MO1: Fo:  MOFo 16X4    F:  0.1 0.1
-#
 # Monochromator 2
 #
 mono2_energy        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 keV  18ID: MO2: En:  MOEn 24XYZ4  E:  0.1 0.1
@@ -26,35 +7,6 @@ mono2_tune          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 
 mono2_twist         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 S:  0.1 0.1
 mono2_yaw           device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Yw:  MOYw 20XU4   W:  0.1 0.1
 mono2_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MO2: Fo:  MOFo 16X4    F:  0.1 0.1
-#
-# Mirror
-#
-##mirror_height       device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MI:  St:  MISt 24XY4   Y:  0.1 0.1
-##mirror_angle        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: MI:  St:  MISt 24XY4   A:  0.1 0.1
-##mirror_focus        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MI:  Fo:  MIFo 20XY4   F:  0.1 0.1
-##mirror_ellipticity  device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MI:  Fo:  MIFo 20XY4   E:  0.1 0.1
-##mirror_lane         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MI:  Ln:  MILn 16X4    L:  0.1 0.1
-##mirror_piezo        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MI:  Pz:  MIPz 16U4    Yp: 0.1 0.1
-#
-# Downstream
-#
-##downstream_height   device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: DN:  St:  DNSt 20XY4   Y:  0.1 0.1
-##downstream_angle    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: DN:  St:  DNSt 20XY4   A:  0.1 0.1
-#
-#
-# Collimator Slits
-#
-##collimator_h_height device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Sh:  CSSh 16X4    HY: 0.1 0.1
-#
-##collimator_x_center device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Ah:  CSAh 20XY4   XC: 0.1 0.1
-##collimator_x_size   device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Ah:  CSAh 20XY4   XS: 0.1 0.1
-##collimator_x_in     device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Ah:  CSAh 20XY4   XI: 0.1 0.1
-##collimator_x_out    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Ah:  CSAh 20XY4   XO: 0.1 0.1
-#
-##collimator_y_center device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Av:  CSAv 20XY4   YC: 0.1 0.1
-##collimator_y_size   device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Av:  CSAv 20XY4   YS: 0.1 0.1
-##collimator_y_top    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Av:  CSAv 20XY4   YT: 0.1 0.1
-##collimator_y_bottom device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: CS:  Av:  CSAv 20XY4   YB: 0.1 0.1
 #
 # Table position
 #
@@ -81,17 +33,6 @@ table_roll          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 
 #
 ##goniometer_x1       device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: GH:  Ps:  GHPs 20XY4   X1: 0.1 0.1
 ##goniometer_x2       device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: GH:  Ps:  GHPs 20XY4   X2: 0.1 0.1
-#
-# XY Positioner
-#
-##xy_x1               device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  P1:  XYP1 20XY4   X1: 0.1 0.1
-##xy_y1               device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  P1:  XYP1 20XY4   Y1: 0.1 0.1
-##xy_x2               device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  P2:  XYP2 20XY4   X2: 0.1 0.1
-##xy_y2               device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  P2:  XYP2 20XY4   Y2: 0.1 0.1
-##xy_wedge_x          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  We:  XYWe 20XY4   Xw: 0.1 0.1
-##xy_wedge_y          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  We:  XYWe 20XY4   Yw: 0.1 0.1
-##xy_table_x          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  Tb:  XYTb 20XY4   Xt: 0.1 0.1
-##xy_table_y          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: XY:  Tb:  XYTb 20XY4   Yt: 0.1 0.1
 #
 # Modular Drives
 #

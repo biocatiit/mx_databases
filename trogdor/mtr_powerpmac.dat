@@ -56,7 +56,7 @@ ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um po
 #
 # BPM Motors
 #
-# Need bpm_v_real to account for change in direction and limit switchpolarities
+# Need bpm_v_real to account for change in direction and limit switch polarities during homing
 #
 bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_v
 bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -1 0 mm powerpmac_171 bpm_v
@@ -86,7 +86,7 @@ mi_ellip   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps p
 #
 # Monochromator 1 motors on powerpmac_173
 #
-!include powerpmac_mono1.dat
+!include mtr_powerpmac_mono1.dat
 #
 #
 # BioCAT beamline angle.
