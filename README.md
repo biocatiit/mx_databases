@@ -7,11 +7,13 @@ Setup:
 3. Copy the current contents of the /opt/mx/etc folder into the subfolder you created.
 4. Commit the current database.
 5. Backup the current database by copying /opt/mx/etc to /opt/mx/etc_bk
-6. Remove the contents of /opt/mx/etc
-7. Add softlinks to to the versions in the git by using the command: sudo find /opt/mx_databases/trogdor -exec ln -s {} \\; (must be run in /opt/mx/etc)
+6. Remove the /opt/mx/etc folder
+7. Add softlinks to git: sudo ln -s /opt/mx_databases/trogdor /opt/mx/etc
+
+Note: often the /opt/mx folder is a softlink to a particular version of an mx install. In this case, it
+shouldn't matter, but it might be best to work in the real directory, rather than the soft link.
 
 Modifying:
 1. Modify the files in the git clone
-2. Update the softlinks in the /opt/mx/etc folder, remove dead links and add links to any new files.
-3. Commit the changes to the git.
-4. When done with modifications for the day, push changes to github.
+2. Commit the changes to the git.
+3. When done with modifications for the day, push changes to github.
