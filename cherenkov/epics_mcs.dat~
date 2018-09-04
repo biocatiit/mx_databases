@@ -1,0 +1,47 @@
+#
+# Purpose: SiS 3820 multichannel scaler records
+#
+sis3820    device mcs epics_mcs "" "" 32 2000 "" 0 0 mcs_timer 18ID:mcs:mca "18ID:mcs:" 0x4
+mcs_timer  device timer mcs_timer "" "" sis3820
+#
+# Scalers
+#
+mcs1       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 0
+mcs2       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 1
+mcs3       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 2
+mcs4       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 3
+mcs5       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 4
+mcs6       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 5
+mcs7       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 6
+mcs8       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 7
+mcs9       device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 8
+mcs10      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 9
+mcs11      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 10
+mcs12      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 11
+mcs13      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 12
+mcs14      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 13
+mcs15      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 14
+mcs16      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 15
+mcs17      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 16
+mcs18      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 17
+mcs19      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 18
+mcs20      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 19
+mcs21      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 20
+mcs22      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 21
+mcs23      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 22
+mcs24      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 23
+mcs25      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 24
+mcs26      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 25
+mcs27      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 26
+mcs28      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 27
+mcs29      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 28
+mcs30      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 29
+mcs31      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 30
+mcs32      device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 31
+#
+# Standard scaler definitions (CUS 2018-06-26)
+#
+i0         device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 3
+i1         device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 4
+i2         device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 5
+i3         device scaler mcs_scaler "" "" 0 0 0x1 mcs_timer sis3820 6
