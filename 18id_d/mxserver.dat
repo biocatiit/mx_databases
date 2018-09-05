@@ -1,3 +1,3 @@
-!include newport_server.dat
-!include dg645_server.dat
+!include mtr_newport.dat
+!include io_dg645.dat
 edge_energy variable inline double "" "" 1 1 0
