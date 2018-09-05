@@ -1,0 +1,8 @@
+prologix_socket interface rs232 telnet "" "" 9600 8 N 1 N 0x0d0a 0x0d0a 1.0 0x0 164.54.204.81 1234 0x8
+prologix interface gpib prologix "" "" 0.5 1 0xa 0xa 0x0 prologix_socket 0
+#
+k428-10  device amplifier keithley428 "" "" 1e5 0.0 0.03 prologix:10 0x3
+k428-11  device amplifier keithley428 "" "" 1e6 0.0 0.03 prologix:11 0x3
+k428-12  device amplifier keithley428 "" "" 1e3 0.0 0.03 prologix:12 0x3
+k428-13  device amplifier keithley428 "" "" 1e5 0.0 0.03 prologix:13 0x3
+#
