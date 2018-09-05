@@ -41,7 +41,7 @@
 #
 ######################### DI/O and PULSE/DELAY GENERATORS #########################
 # SRS DG645 digital delay generator
-!include dg645_client.dat
+!include io_dg645.dat
 #
 #
 ######################### TIMERS #########################
