@@ -1,0 +1,12 @@
+gpib_server server network tcpip_server "" "" 0x20000000 164.54.204.60 9728
+#
+# k428-10  device amplifier network_amplifier "" "" 1e5 0.0 0.03 gpib_server k428-10
+# k428-11  device amplifier network_amplifier "" "" 1e6 0.0 0.03 gpib_server k428-11
+# k428-12  device amplifier network_amplifier "" "" 1e3 0.0 0.03 gpib_server k428-12
+# k428-13  device amplifier network_amplifier "" "" 1e5 0.0 0.03 gpib_server k428-13
+#
+ki0  device amplifier network_amplifier "" "" 1e5 0.0 0.03 gpib_server k428-10
+ki1  device amplifier network_amplifier "" "" 1e6 0.0 0.03 gpib_server k428-11
+ki2  device amplifier network_amplifier "" "" 1e3 0.0 0.03 gpib_server k428-12
+ki3  device amplifier network_amplifier "" "" 1e5 0.0 0.03 gpib_server k428-13
+#

@@ -1,0 +1,31 @@
+#
+# These motors are accessed through an MX server on '18id_a' (aka geo3) which is located
+# in the spare office.
+#
+18id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
+#
+# DeltaTau geobrick controller
+#
+# White beam slits
+#
+# wb1 - bottom blade       wb2 - inboard blade
+# wb3 - top blade          wb4 - outboard blade
+#
+wb_bot  	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um 18id_a wb1
+wb_in     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um 18id_a wb2
+wb_top     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um 18id_a wb3
+wb_out     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um 18id_a wb4
+#
+# Pseudomotors
+#
+wbv_center  device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb_top wb_bot  0.5  0.5  0.0  0.0  0.5  0.5
+wbv_size    device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb_top wb_bot  1.0 -1.0  0.0  0.0  0.5  0.5
+wbh_center  device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb_in wb_out  0.5  0.5  0.0  0.0  0.5  0.5
+wbh_size    device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb_in wb_out  1.0 -1.0  0.0  0.0  0.5  0.5
+#
+# Alternate pseudomotor
+#
+wbv_mid     device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb_bot wb_top
+wbv_wid     device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb_bot wb_top
+wbh_mid     device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb_out wb_in
+wbh_wid     device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb_out wb_in
