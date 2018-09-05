@@ -2,7 +2,9 @@
 Contains MX databases for the BioCAT beamline.
 
 Setup:
-1. Clone the git into /opt/mx_databases
+1. Clone the git into /opt/mx_databases. Because of permission (/opt needs sudo, but the ssh key for
+github is usually set up for the biocat account), the best approach is usuall to clone into your home
+folder and then do a sudo mv into the /opt folder.
 2. Create a subfolder for the computer that you want to version control the databases of.
 3. Copy the current contents of the /opt/mx/etc folder into the subfolder you created.
 4. Commit the current database.
