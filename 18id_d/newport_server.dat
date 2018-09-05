@@ -1,0 +1,46 @@
+!load newport_xps.mxo
+#
+# Newport motors (via direct MX driver)
+#
+xpsc8 interface controller newport_xps "" "" 164.54.204.65 5001 0.0 Administrator Administrator 0x0
+np1 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP1.POSITIONER
+np2 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP2.POSITIONER
+np3 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP3.POSITIONER
+np4 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP4.POSITIONER
+np5 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP5.POSITIONER
+np6 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP6.POSITIONER
+np7 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP7.POSITIONER
+np8 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP8.POSITIONER
+#
+# Newport motors (via direct MX driver)
+#
+xpsq8 interface controller newport_xps "" "" 164.54.204.71 5001 0.0 Administrator Administrator 0x0
+np9  device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group1.Pos
+np10 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group2.Pos
+np11 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group3.Pos
+np12 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group4.Pos
+np13 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group5.Pos
+np14 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group6.Pos
+np15 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group7.Pos
+np16 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsq8 Group8.Pos
+#
+#
+# The following variables make the newport controller come up in AquadB quadrature
+# output mode if supported by the motors themselves.  (C. Segre - 2016_10_13)
+#
+np9_pco_config_name variable field field_string "" "" np9.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np9_pco_config_value variable field field_string "" "" np9.pco_config_value 0x2 1 80 ""
+np10_pco_config_name variable field field_string "" "" np10.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np10_pco_config_value variable field field_string "" "" np10.pco_config_value 0x2 1 80 ""
+np11_pco_config_name variable field field_string "" "" np11.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np11_pco_config_value variable field field_string "" "" np11.pco_config_value 0x2 1 80 ""
+np12_pco_config_name variable field field_string "" "" np12.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np12_pco_config_value variable field field_string "" "" np12.pco_config_value 0x2 1 80 ""
+np13_pco_config_name variable field field_string "" "" np13.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np13_pco_config_value variable field field_string "" "" np13.pco_config_value 0x2 1 80 ""
+np14_pco_config_name variable field field_string "" "" np14.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np14_pco_config_value variable field field_string "" "" np14.pco_config_value 0x2 1 80 ""
+np15_pco_config_name variable field field_string "" "" np15.pco_config_name 0x2 1 80 "aquadb_always_enable"
+np15_pco_config_value variable field field_string "" "" np15.pco_config_value 0x2 1 80 ""
+np16_pco_config_name variable field field_string "" "" np16.pco_config_name 0x2 1 80 "aquadb_always_enable"
+#np16_pco_config_value variable field field_string "" "" np16.pco_config_value 0x2 1 80 ""
