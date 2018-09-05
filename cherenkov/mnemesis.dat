@@ -1,4 +1,0 @@
-!include motor.dat
-#
-nemesis server network tcpip_server "" "" 0x0 164.54.204.52 9727
-aviex device area_detector network_area_detector "" "" 0 nemesis aviex

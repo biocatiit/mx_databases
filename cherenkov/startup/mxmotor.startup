@@ -1,3 +1,0 @@
-# set field DN:my1.home_search_type 5
-# set field DN:my2.home_search_type 5
-load scans /opt/mx/etc/mxscan.dat
