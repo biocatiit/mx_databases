@@ -1,23 +1,23 @@
-vger server network tcpip_server "" "" 0x0 164.54.204.60 9727
+18idd server network tcpip_server "" "" 0x0 164.54.204.188 9727
 #
 # C8 Newport motors
 #
-# np1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np1
-# np2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np2
-# np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np3
-# np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
-# np5 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
-np6 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
-np7 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
-np8 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np8
+# np1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np1
+# np2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np2
+# np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np3
+# np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np4
+# np5 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np5
+np6 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np6
+np7 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np7
+np8 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np8
 #
 # Q8 Newport motors
 #
-# np9 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np9
-# np10 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np10
-# np11 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np11
-# np12 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np12
-# np13 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np13
-# np14 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np14
-# np15 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np15
-# np16 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np16
+# np9 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np9
+# np10 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np10
+# np11 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np11
+# np12 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np12
+# np13 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np13
+# np14 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np14
+# np15 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np15
+# np16 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units 18idd np16
