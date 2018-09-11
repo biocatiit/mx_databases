@@ -1,0 +1,10 @@
+#
+ab          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ab
+cd          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd cd
+ef          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ef
+gh          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd gh
+#
+ab_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ab_burst
+cd_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd cd_burst
+ef_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ef_burst
+gh_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd gh_burst
