@@ -28,7 +28,7 @@
 #
 ######################### SCALERS #########################
 # Struck multichannel scaler
-#!include scl_epics_mcs.dat
+!include scl_epics_mcs.dat
 #
 # Joerger scaler 2
 !include scl_epics_scaler2.dat
@@ -49,8 +49,8 @@
 #
 ######################### TIMERS #########################
 # Additional timer records
-#dark_timer device timer timer_fanout "" "" 2 joerger_timer mcs_timer
-#timer1     device timer timer_fanout "" "" 2 joerger_timer mcs_timer
+dark_timer device timer timer_fanout "" "" 2 joerger_timer mcs_timer
+timer1     device timer timer_fanout "" "" 2 joerger_timer mcs_timer
 soft_timer device timer soft_timer "" ""
 #
 #
