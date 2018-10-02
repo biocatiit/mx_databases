@@ -1,11 +1,11 @@
 joerger_timer                    device timer epics_timer "" "" 18ID:scaler2
 #
-# j2  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 2
-# j3  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 3
-# j4  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 4
-# j5  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 5
-# j6  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 6
-# j7  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 7
+j2  device scaler epics_scaler "" "" 0 0 0x0 joerger_timer 18ID:scaler2 2
+j3  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 3
+j4  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 4
+j5  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 5
+j6  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 6
+j7  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 7
 # j8  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 8
 # j9  device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 9
 # j10 device scaler epics_scaler "" "" 0 0 0x2 joerger_timer 18ID:scaler2 10
