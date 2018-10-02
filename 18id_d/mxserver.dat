@@ -3,5 +3,4 @@
 !include mtr_powerpmac.dat
 !include mtr_newport.dat
 !include io_dg645.dat
-# !include amp_k428.dat
 edge_energy variable inline double "" "" 1 1 0
