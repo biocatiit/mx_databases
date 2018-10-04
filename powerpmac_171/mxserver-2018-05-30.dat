@@ -1,0 +1,6 @@
+!load powerpmac.mxo
+#
+ppmac1 interface controller powerpmac "" "" 0x1
+#
+ds_dnst device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 15
+ds_upst device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 16

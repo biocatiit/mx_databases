@@ -1,0 +1,35 @@
+!load powerpmac.mxo
+#
+ppmac1 interface controller powerpmac "" "" 0x1
+#
+#
+# Downstream support motors
+#
+# Real motors
+#
+ds_dnst  device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.08 0 um ppmac1 15
+ds_upst  device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.08 0 um ppmac1 16
+#
+# Pseudomotors
+#
+ds_angle device motor coordinated_angle "" "" 0 0 -1e+308 1e+308 0 -1 -1 -1000.0 0 mrad tangent_arm 0x1 2 ds_upst ds_dnst 1167000 3859000 1 1 0 0
+ds_vert  device motor translation_mtr "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um 0x0 2 ds_upst ds_dnst
+#
+#
+# BPM motors
+#
+# Scaling for BPM motors as follows:
+#  Horizontal:
+#     Encoder: 512 counts/rev with quadrature equals 2048 counts/rev
+#     Gearhead: 134:1
+#     Leadscrew: 2 mm/ref
+#     274432 counts/2 mm = 137216 counts/mm
+#     7.288e-6 mm/count
+#  Vertical:
+#     Encoder: 512 counts/rev with quadrature equals 2048 counts/rev
+#     Gearhead: 66:1
+#     Leadscrew: 0.318 mm/rev
+#     135168 counts/0.318 mm = 425056.6 counts/mm
+#     2.353e-6 mm/count
+bpm_h  device motor powerpmac_motor "" "" 0 -5000 -1e+10 1e+10 0 -1 -1 7.288e-6 0 mm ppmac1 3
+bpm_v  device motor powerpmac_motor "" "" 0 17000 -1e+10 1e+10 0 -1 -1 2.353e-6 0 mm ppmac1 2
