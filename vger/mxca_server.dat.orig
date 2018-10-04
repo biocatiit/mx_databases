@@ -1,6 +1,0 @@
-!include /opt/mx/etc/mxmotor.dat
-#!export epics epics_motor 18ID:n: *
-!export epics epics_motor 18ID:n: np9
-!export epics epics_motor 18ID:n: np10
-!export epics epics_motor 18ID:n: np11
-!export epics epics_motor 18ID:n: np12

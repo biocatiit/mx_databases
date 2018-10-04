@@ -1,3 +1,0 @@
-!include newport_server.dat
-!include dg645_server.dat
-edge_energy variable inline double "" "" 1 1 0
