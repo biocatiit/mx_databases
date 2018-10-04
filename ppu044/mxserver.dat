@@ -1,0 +1,5 @@
+!load libtiff.mxo
+#
+camserver interface rs232 telnet "" "" 115200 8 N 1 N 0x18 0x0d0a 10 0x0 10.10.10.100 41234 0x0
+pilatus   device area_detector pilatus "" "" 0 0x2000 0x0 "" "" "" "" "" camserver 0x1 1 "/ramdisk" "/nas_data/20180816Gruner"
+pilatus_timer device timer area_detector_timer "" "" pilatus 0

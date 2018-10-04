@@ -1,0 +1,3 @@
+!load libtiff.mxo
+pilatus_server server network tcpip_server "" "" 0x0 164.54.204.77 9727
+pilatus        device area_detector network_area_detector "" "" 0 0x0 0x0 "" "" "" "" "" pilatus_server pilatus 0x0 "" ""
