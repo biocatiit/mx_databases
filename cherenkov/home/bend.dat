@@ -3,8 +3,8 @@
 #---------------------------------------------------------------------------
 # NOTE: need to change to using the following motors:
 #
-mi_bendu    0x4     1        -1     -1000.0   1.0     500.0   2457.0   0.0
-mi_bendd    0x4     1        -1     -1000.0   1.0     500.0   1836.0   0.0
+#mi_bendu    0x4     1        -1     -1000.0   1.0     500.0   2457.0   0.0
+mi_bendd    0x4     4        -1     -1600.0   1.0     100.0   1836.0   0.0
 #
 # They are properly calibrated in real units and need to be tested the next
 # time we need to home the motors 
