@@ -1,0 +1,16 @@
+!load powerpmac.mxo
+#
+ppmac1 interface controller powerpmac "" "" 0x1
+#
+mirror_upst     device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 1
+mirror_dnst     device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 2
+bend_upst       device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 3
+bend_dnst       device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 4
+#missing         device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 5
+mono1_theta     device motor powerpmac_motor "MO1:mr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 6
+mono1_x2_para   device motor powerpmac_motor "MO1:mtx" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 7
+mono1_x2_perp   device motor powerpmac_motor "MO1:mty" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 8
+mono1_focus     device motor powerpmac_motor "MO1:mf" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 9
+mono1_twist_in  device motor powerpmac_motor "MO1:mnr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 10
+mono1_twist_out device motor powerpmac_motor "MO1:mnl" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 11
+mono1_x1_chi    device motor powerpmac_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 12

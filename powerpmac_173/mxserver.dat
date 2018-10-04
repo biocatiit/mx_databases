@@ -1,0 +1,59 @@
+!load powerpmac.mxo
+#
+ppmac1 interface controller powerpmac "" "" 0x1
+#
+#
+#Mirror motors
+#
+mirror_upst      device motor powerpmac_motor "" "" 0 0 -10000000 10000000 2 -1 -1 0.005 0 um ppmac1 1
+mirror_dnst      device motor powerpmac_motor "" "" 0 0 -10000000 10000000 2 -1 -1 0.005 0 um ppmac1 2
+mirror_bend_upst device motor powerpmac_motor "" "" 0 0 -10000000 10000000 2 -1 -1 0.0086263 0 um ppmac1 3
+mirror_bend_dnst device motor powerpmac_motor "" "" 0 0 -10000000 10000000 2 -1 -1 0.0086263 0 um ppmac1 4
+#
+# Mirror pseudomotors
+mirror_angle    device motor linear_function "" "" 0 0 -5e+08 5e+08 0 -1 -1 0.002457 0 mrad 0x0 2 mirror_upst mirror_dnst 0.5 -0.5 0 0 0.5 0.5
+mirror_vert     device motor translation_mtr "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um 0x0 2 mirror_upst mirror_dnst
+mirror_focus    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps 0x0 2 mirror_bend_upst mirror_bend_dnst 0.5 0.5 0.0 0.0 0.5 0.5
+mirror_ellip    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps 0x0 2 mirror_bend_upst mirror_bend_dnst 0.5 -0.5 0.0 0.0 0.5 0.5 
+#
+#
+#missing         device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 5
+#
+#
+# Monochromator #1
+#
+mono1_theta_real device motor powerpmac_motor "MO1:mr" "" 0 10886.657 -1e+09 1e+09 0 -1 -1 4.592778e-6 0 deg ppmac1 6
+mono1_x2_para   device motor powerpmac_motor "MO1:mtx" "" 0 4000.0 -10000000 10000000 0 -1 -1 3.756520e-1 0 um ppmac1 7
+mono1_x2_perp   device motor powerpmac_motor "MO1:mty" "" 0 0 -10000000 10000000 0 -1 -1 1.045880e-1 0 um ppmac1 8
+mono1_focus     device motor powerpmac_motor "MO1:mf" "" 0 0 -10000000 10000000 0 -1 -1 1.897762e-2 0 um ppmac1 9
+mono1_twist_in  device motor powerpmac_motor "MO1:mnl" "" 0 0 -10000000 10000000 0 -1 -1 8.815410e-3 0 um ppmac1 10
+mono1_twist_out device motor powerpmac_motor "MO1:mnr" "" 0 0 -10000000 10000000 0 -1 -1 8.815410e-3 0 um ppmac1 11
+mono1_x1_chi    device motor powerpmac_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 2.970000e-3 0 um ppmac1 12
+#
+# Monochromator parameters
+#
+mono1_beam_offset     variable inline double "" "" 1 1 35000
+mono1_d_spacing       variable inline double "" "" 1 1 3.13555
+#
+# Monochromator pseudomotors
+#
+mono1_theta_list      variable inline record "" "" 1 4 mono1_theta_enabled mono1_theta_type mono1_dummy_params mono1_theta_records
+mono1_theta_enabled   variable inline long "" "" 1 1 1
+mono1_theta_type      variable inline long "" "" 1 1 0
+mono1_theta_records   variable inline record "" "" 1 1 mono1_theta_real
+#
+mono1_normal_list     variable inline record "" "" 1 4 mono1_normal_enabled mono1_normal_type mono1_dummy_params mono1_normal_records
+mono1_normal_enabled  variable inline long "" "" 1 1 0
+mono1_normal_type     variable inline long "" "" 1 1 4
+mono1_normal_records  variable inline record "" "" 1 2 mono1_x2_perp mono1_beam_offset
+#
+mono1_dummy_params    variable inline double "" "" 1 1 0
+#
+# Theta pseudomotor
+#
+mono1_theta           device motor monochromator "" "" 0 0 -10 270 0 -1 -1 1 0 deg 2 mono1_theta_list mono1_normal_list
+#
+# Derived pseudomotors
+#
+mono1_energy          device motor energy_motor "" "" 0 0 4800 35000 0 -1 -1 -1 0 eV mono1_theta mono1_d_spacing 0.0174533
+mono1_wavelength      device motor wavelength_motor "" "" 0 0 2.6 0.35 0 -1 -1 -1 0 A mono1_theta mono1_d_spacing 0.0174533

@@ -1,0 +1,5 @@
+#
+powerpmac server network tcpip_server "" "" 0x20000000 localhost 9727
+#
+MI:my1 device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps powerpmac MI:my1
+MI:my2 device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps powerpmac MI:my2
