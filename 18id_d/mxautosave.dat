@@ -1,5 +1,5 @@
 mx edge_energy.value       0x0
-mx np1.busy_start_interval 0x0
-mx np2.busy_start_interval 0x0
-mx np1.backlash_correction 0x0
-mx np2.backlash_correction 0x0
+#mx np1.busy_start_interval 0x0
+#mx np2.busy_start_interval 0x0
+#mx np1.backlash_correction 0x0
+#mx np2.backlash_correction 0x0
