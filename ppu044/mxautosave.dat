@@ -1,0 +1,17 @@
+mx pilatus.datafile_directory 0x0
+mx pilatus.datafile_pattern   0x0
+mx pilatus.datafile_name      0x0
+mx pilatus.datafile_number    0x0
+mx pilatus.trigger_mode       0x0
+mx pilatus.correction_flags   0x0
+mx pilatus.dezinger_threshold 0x0
+mx pilatus.datafile_allow_overwrite 0x0
+mx pilatus.datafile_autoselect_number 0x0
+mx pilatus.datafile_load_format_name 0x0
+mx pilatus.datafile_save_format_name 0x0
+mx pilatus.correction_load_format_name 0x0
+mx pilatus.correction_save_format_name 0x0
+mx pilatus.filename_log       0x0
+mx pilatus.detector_server_datafile_directory	0x0
+mx pilatus.detector_server_datafile_root	0x0
+mx pilatus.local_datafile_root	0x0
