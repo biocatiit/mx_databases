@@ -1,0 +1,57 @@
+!include /opt/mx/etc/mxmotor.dat
+#!export epics epics_motor 18ID:n: *
+!export epics epics_motor 18ID:n: np1
+!export epics epics_motor 18ID:n: np2
+!export epics epics_motor 18ID:n: np3
+!export epics epics_motor 18ID:n: np4
+!export epics epics_motor 18ID:n: np5
+!export epics epics_motor 18ID:n: np6
+!export epics epics_motor 18ID:n: np7
+!export epics epics_motor 18ID:n: np8
+!export epics epics_motor 18ID:n: np9
+!export epics epics_motor 18ID:n: np10
+!export epics epics_motor 18ID:n: np11
+!export epics epics_motor 18ID:n: np12
+!export epics epics_motor 18ID:n: np13
+!export epics epics_motor 18ID:n: np14
+!export epics epics_motor 18ID:n: np15
+!export epics epics_motor 18ID:n: np16
+#
+np1_able variable inline ulong "" "" 1 1 1
+np2_able variable inline ulong "" "" 1 1 1
+np3_able variable inline ulong "" "" 1 1 1
+np4_able variable inline ulong "" "" 1 1 1
+np5_able variable inline ulong "" "" 1 1 1
+np6_able variable inline ulong "" "" 1 1 1
+np7_able variable inline ulong "" "" 1 1 1
+np8_able variable inline ulong "" "" 1 1 1
+np9_able variable inline ulong "" "" 1 1 1
+np10_able variable inline ulong "" "" 1 1 1
+np11_able variable inline ulong "" "" 1 1 1
+np12_able variable inline ulong "" "" 1 1 1
+np13_able variable inline ulong "" "" 1 1 1
+np14_able variable inline ulong "" "" 1 1 1
+np15_able variable inline ulong "" "" 1 1 1
+np16_able variable inline ulong "" "" 1 1 1
+#
+!export epics epics_pv 18ID:n:np1_able.VAL np1_able.value
+!export epics epics_pv 18ID:n:np2_able.VAL np2_able.value
+!export epics epics_pv 18ID:n:np3_able.VAL np3_able.value
+!export epics epics_pv 18ID:n:np4_able.VAL np4_able.value
+!export epics epics_pv 18ID:n:np5_able.VAL np5_able.value
+!export epics epics_pv 18ID:n:np6_able.VAL np6_able.value
+!export epics epics_pv 18ID:n:np7_able.VAL np7_able.value
+!export epics epics_pv 18ID:n:np8_able.VAL np8_able.value
+!export epics epics_pv 18ID:n:np9_able.VAL np9_able.value
+!export epics epics_pv 18ID:n:np10_able.VAL np10_able.value
+!export epics epics_pv 18ID:n:np11_able.VAL np11_able.value
+!export epics epics_pv 18ID:n:np12_able.VAL np12_able.value
+!export epics epics_pv 18ID:n:np13_able.VAL np13_able.value
+!export epics epics_pv 18ID:n:np14_able.VAL np14_able.value
+!export epics epics_pv 18ID:n:np15_able.VAL np15_able.value
+!export epics epics_pv 18ID:n:np16_able.VAL np16_able.value
+#
+!export epics epics_pv 18ID:k428-10:totalgain.VAL k428-10.gain
+!export epics epics_pv 18ID:k428-11:totalgain.VAL k428-11.gain
+!export epics epics_pv 18ID:k428-12:totalgain.VAL k428-12.gain
+!export epics epics_pv 18ID:k428-13:totalgain.VAL k428-13.gain
