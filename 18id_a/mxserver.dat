@@ -33,3 +33,10 @@ wb4  device motor pmac_motor "" "" 0 -500000 -1.0e308 1.0e308 0 -1 -1 0.00021229
 # The following should be used for closed loop operation of the geobrick 
 # controller (once we have established the encoder pitch)
 #
+#
+#
+# This sets up pseudomotors for the slit gaps and centers
+wbv_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb1 wb3
+wbv_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb1 wb3
+wbh_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb4 wb2
+wbh_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb4 wb2

@@ -15,7 +15,13 @@ wb4  device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um 
 #
 # Pseudomotors
 #
-wbv_center                        device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb3 wb1  0.5  0.5  0.0  0.0  0.5  0.5
-wbv_size                          device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb3 wb1  1.0 -1.0  0.0  0.0  0.5  0.5
-wbh_center                        device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb2 wb4  0.5  0.5  0.0  0.0  0.5  0.5
-wbh_size                          device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb2 wb4  1.0 -1.0  0.0  0.0  0.5  0.5
+#wbv_center                        device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb3 wb1  0.5  0.5  0.0  0.0  0.5  0.5
+#wbv_size                          device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb3 wb1  1.0 -1.0  0.0  0.0  0.5  0.5
+#wbh_center                        device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb2 wb4  0.5  0.5  0.0  0.0  0.5  0.5
+#wbh_size                          device motor linear_function "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x0 2 wb2 wb4  1.0 -1.0  0.0  0.0  0.5  0.5
+#
+#
+wbv_cen  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um geobrick wbv_center
+wbv_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um geobrick wbv_size
+wbh_cen  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um geobrick wbh_center
+wbh_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um geobrick wbh_size
