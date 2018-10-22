@@ -1,0 +1,12 @@
+mx k428-i0.gain 0x0
+mx k428-i0.offset 0x0
+mx k428-i0.time_constant 0x0
+mx k428-i1.gain 0x0
+mx k428-i1.offset 0x0
+mx k428-i1.time_constant 0x0
+mx k428-i2.gain 0x0
+mx k428-i2.offset 0x0
+mx k428-i2.time_constant 0x0
+mx k428-i3.gain 0x0
+mx k428-i3.offset 0x0
+mx k428-i3.time_constant 0x0
