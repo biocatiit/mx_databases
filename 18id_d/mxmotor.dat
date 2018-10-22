@@ -1,0 +1,38 @@
+id_d server network tcpip_server "" "" 0x0 localhost 9727
+#
+# Powerpmac motors
+ds_angle device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d ds_angle
+mi_angle device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d mi_angle
+bl_angle device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d bl_angle
+#
+# SRS DG645 delay generator
+ab       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab
+cd       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd
+ef       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef
+gh       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh
+#
+ab_burst device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab_burst
+cd_burst device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd_burst
+ef_burst device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef_burst
+gh_burst device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh_burst
+#
+# EPICS motors
+jj1_top  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1_top
+jj1_bot  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1_bot
+jj1_in   device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1_in
+jj1_out  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1_out
+#
+xenocs_top  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_top
+xenocs_bot  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_bot
+xenocs_in   device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_in
+xenocs_out  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_out
+#
+jj1v_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1v_center
+jj1v_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1v_size
+jj1h_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1h_center
+jj1h_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d jj1h_size
+#
+xenocsv_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsv_center
+xenocsv_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsv_size
+xenocsh_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsh_center
+xenocsh_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsh_size

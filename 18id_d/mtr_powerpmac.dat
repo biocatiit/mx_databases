@@ -15,5 +15,5 @@ mi_angle   device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 mrad po
 # Local pseudomotors
 #
 # BioCAT beamline angle.
-# bl_angle device motor theta_2theta "" "" 0 0 -5 180 0 -1 -1 1 0 mrad mi_angle ds_angle 0x2
+bl_angle device motor theta_2theta "" "" 0 0 -5 180 0 -1 -1 1 0 mrad mi_angle ds_angle 0x2
 #
