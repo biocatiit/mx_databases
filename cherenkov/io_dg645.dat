@@ -1,3 +1,4 @@
+18idd server network tcpip_server "" "" 0x0 164.54.204.188 9727
 #
 ab          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ab
 cd          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd cd
