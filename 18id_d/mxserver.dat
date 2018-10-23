@@ -1,6 +1,9 @@
 # This server is for equipment in the D hutch.
 #
+!load epics.mxo
+#
 !include mtr_powerpmac.dat
 #!include mtr_newport.dat
+!include mtr_steppak.dat
 !include io_dg645.dat
 edge_energy variable inline double "" "" 1 1 0

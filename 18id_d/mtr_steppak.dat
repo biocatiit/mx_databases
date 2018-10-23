@@ -1,0 +1,24 @@
+# EPICS motors from the steppaks
+#
+# JJ slits, collimators
+jj1_top      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m1
+jj1_bot      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m2
+jj1_in       device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m3
+jj1_out      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m4
+#
+# Xenocs scatterless slits, guard
+xenocs_top   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m29
+xenocs_bot   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m30
+xenocs_in    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m31
+xenocs_out   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m32
+#
+#Pseudomotors for slit gap, size
+jj1v_center  device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 jj1_bot jj1_top
+jj1v_size    device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 jj1_bot jj1_top
+jj1h_center  device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 jj1_out jj1_in
+jj1h_size    device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 jj1_out jj1_in
+#
+xenocsv_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 xenocs_bot xenocs_top
+xenocsv_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 xenocs_bot xenocs_top
+xenocsh_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 xenocs_out xenocs_in
+xenocsh_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 xenocs_out xenocs_in
