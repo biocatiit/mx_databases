@@ -2,3 +2,7 @@ mx wb1.position 0x0
 mx wb2.position 0x0
 mx wb3.position 0x0
 mx wb4.position 0x0
+mx wbv_center.offset	0x0
+mx wbv_size.offset		0x0
+mx wbh_center.offset 	0x0
+mx wbh_size.offset 		0x0
