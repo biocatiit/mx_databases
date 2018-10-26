@@ -58,6 +58,10 @@ jj1_top		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m
 jj1_bot		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m2
 jj1_in		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m3
 jj1_out		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m4
+jj1v_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_center
+jj1v_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_size
+jj1h_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_center
+jj1h_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_size
 #
 #Flight tube cradle motors
 #
@@ -72,6 +76,22 @@ xenocs_top	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e
 xenocs_bot  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m30
 xenocs_in   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m31
 xenocs_out  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m32
+xenocsv_cen device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_center
+xenocsv_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_size
+xenocsh_cen device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_center
+xenocsh_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_size
+#
+# Slit pseudomotors
+#
+col_v_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_center
+col_v_gap    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_size
+col_h_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_center
+col_h_gap    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_size
+#
+grd_v_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_center
+grd_v_gap    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_size
+grd_h_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_center
+grd_h_gap    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_size
 #
 # Downstream fluoresent screen
 #
