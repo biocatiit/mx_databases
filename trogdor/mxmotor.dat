@@ -8,6 +8,10 @@
 !include device_servers.dat
 #
 #
+######################### Detectors #########################
+!include det_pilatus.dat
+#
+#
 ######################### MOTORS #########################
 # 18-ID undulator control
 !include mtr_aps.dat
