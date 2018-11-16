@@ -87,8 +87,8 @@ xenocsh_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id
 #
 # Downstream fluoresent screen
 #
-screen_x	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m23
-screen_y	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m24
+screen_x	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m17
+screen_y	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m18
 #
 # Beamstop motors
 #
