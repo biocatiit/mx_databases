@@ -31,6 +31,9 @@
 # EPICS Step-pack motors.
 !include mtr_steppak.dat
 #
+# Parker motors
+!include mtr_parker.dat
+#
 # Motor aliases
 !include mtr_aliases.dat
 #
