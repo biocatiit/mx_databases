@@ -90,6 +90,11 @@ xenocsh_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id
 screen_x	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m23
 screen_y	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m24
 #
+# Beamstop motors
+#
+bs_v     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m15
+bs_h     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m16
+#
 # CRL Stepper motors, copied from an old file, may not be accurate!
 #
 # crl_yaw             device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m18
