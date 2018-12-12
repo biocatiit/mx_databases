@@ -21,3 +21,12 @@ np8 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 unit
 # np14 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np14
 # np15 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np15
 # np16 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np16
+#
+# Newport motors for Pollack group
+#
+bd_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np1
+bd_z device motor network_motor "" "" 0 0 0 5 0 -1 -1 1 0 units vger np2
+gd_x device motor network_motor "" "" 0 0 0 5 0 -1 -1 1 0 units vger np3
+gd_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
+sam_x device motor network_motor "" "" 0 0 0 5 0 -1 -1 1 0 units vger np5
+sam_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
