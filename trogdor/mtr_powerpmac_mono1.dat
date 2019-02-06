@@ -3,8 +3,8 @@ mono1_x2_para   device motor network_motor "MO1:mtx" "" 0 0 -10000000 10000000 0
 mono1_x2_perp   device motor network_motor "MO1:mty" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x2_perp
 mono1_x2_perp_real   device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x2_perp_real
 mono1_focus     device motor network_motor "MO1:mf" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_focus
-mono1_twist_in  device motor network_motor "MO1:mnr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_in
-mono1_twist_out device motor network_motor "MO1:mnl" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_out
+mono1_twist_in  device motor network_motor "MO1:mnl" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_in
+mono1_twist_out device motor network_motor "MO1:mnr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_out
 mono1_x1_chi    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x1_chi
 #
 #

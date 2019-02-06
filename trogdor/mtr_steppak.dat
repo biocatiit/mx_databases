@@ -54,21 +54,21 @@
 #
 # JJ slits
 #
-jj1_top		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m1
-jj1_bot		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m2
-jj1_in		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m3
-jj1_out		device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m4
+jj1_top     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m1
+jj1_bot     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m2
+jj1_in      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m3
+jj1_out     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m4
 #
 #Flight tube cradle motors
 #
-flus_x    	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m25
-flus_y    	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m26
-flds_x    	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m27
-flds_y    	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m28
+flus_x      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m25
+flus_y      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m26
+flds_x      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m27
+flds_y      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m28
 #
 # Xeoncs slits
 #
-xenocs_top	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m29
+xenocs_top  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m29
 xenocs_bot  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m30
 xenocs_in   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m31
 xenocs_out  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m32
@@ -76,24 +76,24 @@ xenocs_out  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:
 # Slit pseudomotors
 #
 jj1v_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_center
-jj1v_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_size
+jj1v_size   device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1v_size
 jj1h_cen    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_center
-jj1h_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_size
+jj1h_size   device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d jj1h_size
 #
 xenocsv_cen device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_center
-xenocsv_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_size
-xenocsh_cen device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_center
-xenocsh_size device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_size
+xenocsv_size  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsv_size
+xenocsh_cen   device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_center
+xenocsh_size  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm id_d xenocsh_size
 #
 # Downstream fluoresent screen
 #
-screen_x	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m17
-screen_y	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m18
+screen_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m17
+screen_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m18
 #
 # Beamstop motors
 #
-bs_v     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m15
-bs_h     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m16
+bs_v        device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m15
+bs_h        device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m16
 #
 # CRL Stepper motors, copied from an old file, may not be accurate!
 #
@@ -102,6 +102,10 @@ bs_h     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m
 # crly                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 0.2 0 mm 18ID:e:m20
 # crlx                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 2 0 mm 18ID:e:m23
 #
-#Camera and guard slit motors
+# Camera and guard slit motors
 inline_viewer_x  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m21
 inline_viewer_y  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m22
+#
+# Coflow Wedge
+coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
+coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m20
