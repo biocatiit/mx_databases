@@ -79,3 +79,7 @@ mx xenocsv_center.offset   0x0
 mx xenocsv_size.offset     0x0
 mx xenocsh_center.offset   0x0
 mx xenocsh_size.offset     0x0
+mx xenocs_col_v_center.offset   0x0
+mx xenocs_col_v_size.offset     0x0
+mx xenocs_col_h_center.offset   0x0
+mx xenocs_col_h_size.offset     0x0
