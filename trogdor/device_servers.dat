@@ -1,6 +1,6 @@
 # This is a list of servers used by mxmotor.
 #
-# Servers with only a single device, like a detector or a powerpmac, 
+# Servers with only a single device, like a detector or a powerpmac,
 # should go in their device specific .dat files
 #
 # Servers that have more than one device, like the id_a and id_d server,
@@ -14,4 +14,4 @@
 # id_a - for A hutch devices, currently in the spare office
 # id_d - for D hutch devices, currently in the spare office
 id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
-id_d server network tcpip_server "" "" 0x0 164.54.204.188 9727
+id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
