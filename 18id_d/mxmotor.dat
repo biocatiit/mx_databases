@@ -47,3 +47,8 @@ xenocsv_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um
 xenocsv_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsv_size
 xenocsh_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsh_center
 xenocsh_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocsh_size
+#
+xenocs_colv_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_colv_center
+xenocs_colv_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_colv_size
+xenocs_colh_center  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_colh_center
+xenocs_colh_size    device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um id_d xenocs_colh_size
