@@ -18,7 +18,7 @@ mcs9       device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 8
 mcs10      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 9
 mcs11      device scaler mcs_scaler "" "" 0 0 0x0 mcs_timer sis3820 10
 mcs12      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 11
-# mcs13      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 12
+mcs13      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 12
 # mcs14      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 13
 # mcs15      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 14
 # mcs16      device scaler mcs_scaler "" "" 0 0 0x2 mcs_timer sis3820 15
