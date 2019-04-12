@@ -15,7 +15,7 @@ w1y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000058467 0 mm 
 #     159:1 gear reducer                         159:1 gear reducer
 #     +2.54 mm/lead screw rev                    +2.54 mm/lead screw rev
 p1x device motor network_motor "" "" 0 0 1e4 3e5 0 -1 -1 +0.000249607 0 mm powerpmac_166 p1x
-p1y device motor network_motor "" "" 0 0 0 2.3e5 0 -1 -1 -0.000249607 0 mm powerpmac_166 p1y
+p1y device motor network_motor "" "" 0 0 -1e4 2.3e5 0 -1 -1 -0.000249607 0 mm powerpmac_166 p1y
 #
 # positioner 3 is in server slot 2 (CUS 2017_10_16)
 #
