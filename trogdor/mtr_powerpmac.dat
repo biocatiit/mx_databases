@@ -1,7 +1,5 @@
-#
-#  D-Hutch Upstream Positioners
-#
-powerpmac_166 server network tcpip_server "" "" 0x20000000 164.54.204.166 9727
+# #############################################################
+#  D-Hutch Upstream Positioners, PowerPMAC .166
 #
 # Faulhaber motors for the wedge are as follows
 #  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
@@ -35,37 +33,25 @@ rock device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpma
 roll device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 roll
 #
 #
-# Downstream, Mono2 & BPM PowerPMAC
-#
-powerpmac_171 server network tcpip_server "" "" 0x20000000 164.54.204.171 9727
-#
+# #############################################################
+# Downstream support and Mono2 on PowerPMAC .172 (formerly .171)
 #
 # Usable motors for Downstream Support
 #
-ds_upst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_171 ds_upst
-ds_dnst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_171 ds_dnst
-ds_vert    device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um powerpmac_171 ds_vert
+ds_upst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_172 ds_upst
+ds_dnst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_172 ds_dnst
+ds_vert    device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um powerpmac_172 ds_vert
 #
 # The coordinated_angle pseudomotor is used to compute the positions of
 # the downstream angle.  The segmented_move pseudomotor is used to break
-# up the move into a bunch of small moves. Base record now on the powerpmac_171
+# up the move into a bunch of small moves. Base record now on the powerpmac_172
 # server
 #
-ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um powerpmac_171 ds_angle
+ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um powerpmac_172 ds_angle
 #
 #
-# BPM Motors
-#
-# Need bpm_v_real to account for change in direction and limit switch polarities during homing
-#
-bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_v
-bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -1 0 mm powerpmac_171 bpm_v
-bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_h
-#
-#  Mirror & Mono1 PowerPMAC
-#
-powerpmac_173 server network tcpip_server "" "" 0x20000000 164.54.204.173 9727#
-#
+# #############################################################
+# Mirror, Mono1, and BPM on PowerPMAC .173
 #
 # Mirror motors on powerpmac_173
 #
@@ -84,12 +70,23 @@ mi_focus   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps p
 mi_ellip   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps powerpmac_173 mirror_ellip
 #
 #
-# Monochromator 1 motors on powerpmac_173
+# BPM Motors
 #
-!include mtr_powerpmac_mono1.dat
+# Need bpm_v_real to account for change in direction and limit switch polarities during homing
+#
+bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_v
+bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -1 0 mm powerpmac_171 bpm_v
+bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_h
+#
+#
+#
+# #############################################################
+# Monochromator 1 and 2 motors
+#
+!include mtr_powerpmac_monos.dat
+#
 #
 #
 # BioCAT beamline angle.
 #
-#bl_angle device motor theta_2theta "" "" 0 0 -5 180 0 -1 -1 1 0 mrad mi_angle ds_angle 0x2
 bl_angle  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mrad id_d bl_angle

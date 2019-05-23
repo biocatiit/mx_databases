@@ -14,7 +14,7 @@ mirror_bend_dnst device motor powerpmac_motor "" "" 0 0 -10000000 10000000 2 -1 
 mirror_angle    device motor linear_function "" "" 0 0 -5e+08 5e+08 0 -1 -1 0.002457 0 mrad 0x0 2 mirror_upst mirror_dnst 0.5 -0.5 0 0 0.5 0.5
 mirror_vert     device motor translation_mtr "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um 0x0 2 mirror_upst mirror_dnst
 mirror_focus    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps 0x0 2 mirror_bend_upst mirror_bend_dnst 0.5 0.5 0.0 0.0 0.5 0.5
-mirror_ellip    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps 0x0 2 mirror_bend_upst mirror_bend_dnst 0.5 -0.5 0.0 0.0 0.5 0.5 
+mirror_ellip    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps 0x0 2 mirror_bend_upst mirror_bend_dnst 0.5 -0.5 0.0 0.0 0.5 0.5
 #
 #
 #missing         device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 steps ppmac1 5
@@ -57,3 +57,22 @@ mono1_theta           device motor monochromator "" "" 0 0 -10 270 0 -1 -1 1 0 d
 #
 mono1_energy          device motor energy_motor "" "" 0 0 4800 35000 0 -1 -1 -1 0 eV mono1_theta mono1_d_spacing 0.0174533
 mono1_wavelength      device motor wavelength_motor "" "" 0 0 2.6 0.35 0 -1 -1 -1 0 A mono1_theta mono1_d_spacing 0.0174533
+#
+#
+# BPM motors
+#
+# Scaling for BPM motors as follows:
+#  Horizontal:
+#     Encoder: 512 counts/rev with quadrature equals 2048 counts/rev
+#     Gearhead: 134:1
+#     Leadscrew: 2 mm/ref
+#     274432 counts/2 mm = 137216 counts/mm
+#     7.288e-6 mm/count
+#  Vertical:
+#     Encoder: 512 counts/rev with quadrature equals 2048 counts/rev
+#     Gearhead: 66:1
+#     Leadscrew: 0.318 mm/rev
+#     135168 counts/0.318 mm = 425056.6 counts/mm
+#     2.353e-6 mm/count
+#bpm_h  device motor powerpmac_motor "" "" 0 -5000 -1e+10 1e+10 0 -1 -1 7.288e-6 0 mm ppmac1 13
+#bpm_v  device motor powerpmac_motor "" "" 0 17000 -1e+10 1e+10 0 -1 -1 2.353e-6 0 mm ppmac1 14
