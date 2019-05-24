@@ -1,12 +1,12 @@
 #
 # Monochromator 2
 #
-mono2_energy        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 keV  18ID: MO2: En:  MOEn 24XYZ4  E:  0.1 0.1
-mono2_wavelength    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 A    18ID: MO2: En:  MOEn 24XYZ4  L:  0.1 0.1
-mono2_tune          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 N:  0.1 0.1
-mono2_twist         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 S:  0.1 0.1
-mono2_yaw           device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Yw:  MOYw 20XU4   W:  0.1 0.1
-mono2_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MO2: Fo:  MOFo 16X4    F:  0.1 0.1
+#mono2_energy        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 keV  18ID: MO2: En:  MOEn 24XYZ4  E:  0.1 0.1
+#mono2_wavelength    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 A    18ID: MO2: En:  MOEn 24XYZ4  L:  0.1 0.1
+#mono2_tune          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 N:  0.1 0.1
+#mono2_twist         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 S:  0.1 0.1
+#mono2_yaw           device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Yw:  MOYw 20XU4   W:  0.1 0.1
+#mono2_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MO2: Fo:  MOFo 16X4    F:  0.1 0.1
 #
 # Table position
 #

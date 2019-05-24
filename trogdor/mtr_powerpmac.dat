@@ -74,9 +74,9 @@ mi_ellip   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps p
 #
 # Need bpm_v_real to account for change in direction and limit switch polarities during homing
 #
-bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_v
-bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -1 0 mm powerpmac_171 bpm_v
-bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_171 bpm_h
+bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_173 bpm_v_real
+bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -1 0 mm powerpmac_173 bpm_v
+bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_173 bpm_h
 #
 #
 #

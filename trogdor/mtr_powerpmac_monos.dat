@@ -8,7 +8,8 @@ mono1_x2_perp_real   device motor network_motor "" "" 0 0 -10000000 10000000 0 -
 mono1_focus     device motor network_motor "MO1:mf" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_focus
 mono1_twist_in  device motor network_motor "MO1:mnl" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_in
 mono1_twist_out device motor network_motor "MO1:mnr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_twist_out
-mono1_x1_chi    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x1_chi
+mono1_x1_chi    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_173 mono1_x1_chi
+mono1_x1_chi_real    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_173 mono1_x1_chi_real
 #
 #
 mono1_theta device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_173 mono1_theta
@@ -38,7 +39,8 @@ mono2_x2_perp_real   device motor network_motor "" "" 0 0 -10000000 10000000 0 -
 mono2_focus     device motor network_motor "MO2:mf" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_focus
 mono2_twist_in  device motor network_motor "MO2:mnl" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_twist_in
 mono2_twist_out device motor network_motor "MO2:mnr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_twist_out
-mono2_x1_chi    device motor network_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_x1_chi
+mono2_x1_chi    device motor network_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_172 mono2_x1_chi
+mono2_x1_chi_real    device motor network_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_172 mono2_x1_chi_real
 #
 #
 mono2_theta device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_172 mono2_theta
