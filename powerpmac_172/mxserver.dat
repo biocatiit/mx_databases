@@ -78,8 +78,8 @@ mono2_theta           device motor monochromator "" "" 0 0 -1e3 1e3 0 -1 -1 -1 0
 #
 # Twist and tune pseudomotors
 #
-mono2_twist           device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 -0.5 0.0 0.0 0.5 0.5
-mono2_tune            device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 0.5 0.0 0.0 0.5 0.5
+mono2_twist           device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 -0.5 0.0 0.0 0.5 0.5
+mono2_tune            device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 0.5 0.0 0.0 0.5 0.5
 #
 # Derived pseudomotors
 #

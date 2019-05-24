@@ -41,6 +41,7 @@ mirror_ellip    device motor linear_function "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 
 # twist_in, in um (mnl):    mnl->dnl: 8.815410e-3, dnl->snl: 8.48e-1, total: 7.47546768e-3
 # twist_out, in um (mnr):   mnr->dnr: 8.815410e-3, dnr->snr: 8.48e-1, total: 7.47546768e-3
 # chi, in urad (mw):        mw->dw: 2.97e-6, dw->sw: -2.06, sw->W: 1/2.625e-4, total: -2.331631e-2
+# tune and twist (urad):    scale factor on snr and snl of 1/4.445e-2 = 22.4972
 #
 #
 mono1_theta_real    device motor powerpmac_motor "MO1:mr" "" 0 10886.657 -1e+9 1e+9 0 -1 -1 4.592778e-6 0 deg ppmac1 6
@@ -83,8 +84,8 @@ mono1_theta           device motor monochromator "" "" 0 0 -1e3 1e3 0 -1 -1 -1 0
 #
 # Twist and tune pseudomotors
 #
-mono1_twist           device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um 0x0 2 mono1_twist_out mono1_twist_in 0.5 -0.5 0.0 0.0 0.5 0.5
-mono1_tune            device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um 0x0 2 mono1_twist_out mono1_twist_in 0.5 0.5 0.0 0.0 0.5 0.5
+mono1_twist           device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono1_twist_out mono1_twist_in 0.5 -0.5 0.0 0.0 0.5 0.5
+mono1_tune            device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono1_twist_out mono1_twist_in 0.5 0.5 0.0 0.0 0.5 0.5
 #
 # Derived pseudomotors
 #
@@ -107,6 +108,7 @@ mono1_wavelength      device motor wavelength_motor "" "" 0 0 2.6 0.35 0 -1 -1 1
 #     Leadscrew: 0.318 mm/rev
 #     135168 counts/0.318 mm = 425056.6 counts/mm
 #     2.353e-6 mm/count
-bpm_h  device motor powerpmac_motor "" "" 0 -5000 -1e+10 1e+10 0 -1 -1 7.288e-6 0 mm ppmac1 13
-bpm_v  device motor powerpmac_motor "" "" 0 17000 -1e+10 1e+10 0 -1 -1 2.353e-6 0 mm ppmac1 14
+bpm_h       device motor powerpmac_motor "" "" 0 -5000 -1e+10 1e+10 0 -1 -1 7.288e-6 0 mm ppmac1 13
+bpm_v       device motor powerpmac_motor "" "" 0 17000 -1e+10 1e+10 0 -1 -1 -2.353e-6 0 mm ppmac1 14
+bpm_v_real  device motor powerpmac_motor "" "" 0 17000 -1e+10 1e+10 0 -1 -1 2.353e-6 0 mm ppmac1 14
 #
