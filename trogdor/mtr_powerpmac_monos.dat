@@ -1,7 +1,7 @@
 # #############################################################
 # Mono 1 on PowerPMAC 173
 #
-mono1_theta_real device motor network_motor "MO1:mr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_173 mono1_theta_real
+mono1_theta_real device motor network_motor "MO1:mr" "" 0 0 -1e12 1e12 0 -1 -1 1 0 deg powerpmac_173 mono1_theta_real
 mono1_x2_para   device motor network_motor "MO1:mtx" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x2_para
 mono1_x2_perp   device motor network_motor "MO1:mty" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x2_perp
 mono1_x2_perp_real   device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_173 mono1_x2_perp_real
@@ -12,7 +12,7 @@ mono1_x1_chi    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 
 mono1_x1_chi_real    device motor network_motor "MO1:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_173 mono1_x1_chi_real
 #
 #
-mono1_theta device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_173 mono1_theta
+mono1_theta device motor network_motor "" "" 0 0 -1e12 1e12 0 -1 -1 1 0 deg powerpmac_173 mono1_theta
 mono1_energy device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.001 0 keV powerpmac_173 mono1_energy
 mono1_wavelength device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 A powerpmac_173 mono1_wavelength
 #
@@ -32,7 +32,7 @@ mono1_parallel_enabled variable net_variable net_long "" "" powerpmac_173 mono1_
 # #############################################################
 # Mono 2 on PowerPMAC 172
 #
-mono2_theta_real device motor network_motor "MO2:mr" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_172 mono2_theta_real
+mono2_theta_real device motor network_motor "MO2:mr" "" 0 0 -1e12 1e12 0 -1 -1 1 0 deg powerpmac_172 mono2_theta_real
 mono2_x2_para   device motor network_motor "MO2:mtx" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_x2_para
 mono2_x2_perp   device motor network_motor "MO2:mty" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_x2_perp
 mono2_x2_perp_real   device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 um powerpmac_172 mono2_x2_perp_real
@@ -43,7 +43,7 @@ mono2_x1_chi    device motor network_motor "MO2:mw" "" 0 0 -10000000 10000000 0 
 mono2_x1_chi_real    device motor network_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 1 0 urad powerpmac_172 mono2_x1_chi_real
 #
 #
-mono2_theta device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 deg powerpmac_172 mono2_theta
+mono2_theta device motor network_motor "" "" 0 0 -1e12 1e12 0 -1 -1 1 0 deg powerpmac_172 mono2_theta
 mono2_energy device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.001 0 keV powerpmac_172 mono2_energy
 mono2_wavelength device motor network_motor "" "" 0 0 -10000000 10000000 0 -1 -1 1 0 A powerpmac_172 mono2_wavelength
 #
