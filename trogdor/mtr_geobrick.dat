@@ -1,6 +1,6 @@
 #
-# These motors are accessed through an MX server on 'id_a' (aka geo3) which is located
-# in the spare office.
+# These motors are accessed through an MX server on 'id_d' (aka geo6) which is located
+# on top of the hutch
 #
 # Server is defined in device_servers.dat
 #
@@ -11,14 +11,14 @@
 # wb1 - bottom blade       wb2 - inboard blade
 # wb3 - top blade          wb4 - outboard blade
 #
-wb_bot  	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_a wb1
-wb_in     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_a wb2
-wb_top     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_a wb3
-wb_out     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_a wb4
+wb_bot  	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_d wb1
+wb_in     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_d wb2
+wb_top     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_d wb3
+wb_out     	device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 um id_d wb4
 #
 # Pseudomotors
 #
-wbv_center  device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_a wbv_center
-wbv_size    device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_a wbv_size
-wbh_center  device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_a wbh_center
-wbh_size    device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_a wbh_size
+wbv_center  device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_d wbv_center
+wbv_size    device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_d wbv_size
+wbh_center  device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_d wbh_center
+wbh_size    device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 um id_d wbh_size
