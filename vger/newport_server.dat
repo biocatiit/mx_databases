@@ -2,15 +2,20 @@
 #
 # Newport motors (via direct MX driver)
 #
-xpsc8 interface controller newport_xps "" "" 164.54.204.65 5001 0.0 Administrator Administrator 0x0
-np1 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP1.POSITIONER
-np2 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP2.POSITIONER
-np3 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP3.POSITIONER
-np4 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP4.POSITIONER
-np5 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP5.POSITIONER
-np6 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP6.POSITIONER
-np7 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP7.POSITIONER
-np8 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsc8 GROUP8.POSITIONER
+# xpsc8 interface controller newport_xps "" "" 164.54.204.65 5001 0.0 Administrator Administrator 0x0
+xpsd8 interface controller newport_xps "" "" 164.54.204.74 5001 0.0 Administrator Administrator 0x0
+np1 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group1.Pos
+np2 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group2.Pos
+np3 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group3.Pos
+np4 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group4.Pos
+np5 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group5.Pos
+np6 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group6.Pos
+np7 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group7.Pos
+np8 device motor newport_xps_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units xpsd8 Group8.Pos
+#
+# For TR-SAXS configuration using an XY group
+# tr_x device motor newport_xps_motor "" "" 0 0 -1e6 1e6 0 -1 -1 1 0 units xpsc8 XY.X
+# tr_y device motor newport_xps_motor "" "" 0 0 -1e6 1e6 0 -1 -1 1 0 units xpsc8 XY.Y
 #
 # Newport motors (via direct MX driver)
 #
