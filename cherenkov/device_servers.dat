@@ -11,7 +11,7 @@
 # This file should be the first thing imported into mxmotor.
 #
 # Server description and locations:
-# id_a - for A hutch devices, currently in the spare office
-# id_d - for D hutch devices, currently in the spare office
-id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
+# id_a - for A hutch devices, currently on top of D hutch
+# id_d - for A and D hutch devices, currently on top of D hutch
+# id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
 id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
