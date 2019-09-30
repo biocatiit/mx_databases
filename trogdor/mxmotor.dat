@@ -80,10 +80,10 @@ undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.V
 #
 #
 # Pseudomotors and variables used by MX XAFS scans
-edge_energy variable net_variable net_double "" "" id_d edge_energy.value 1 1 0
-e_minus_e0  device motor delta_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 keV energy edge_energy
-k           device motor xafs_wavenumber "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 A energy
+# edge_energy variable net_variable net_double "" "" id_d edge_energy.value 1 1 0
+# e_minus_e0  device motor delta_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 keV energy edge_energy
+# k           device motor xafs_wavenumber "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 A energy
 #
 #
 # Test motor record
-test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000
+# test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000
