@@ -3,6 +3,15 @@
 !load epics_pmac_biocat.mxo
 #
 #
+######################### SERVERS #########################
+#Device servers with more than one device
+!include device_servers.dat
+#
+#
+######################### Detectors #########################
+!include det_pilatus.dat
+#
+#
 ######################### MOTORS #########################
 # 18-ID undulator control
 !include mtr_aps.dat
@@ -21,6 +30,9 @@
 #
 # EPICS Step-pack motors.
 !include mtr_steppak.dat
+#
+# Parker motors
+# !include mtr_parker.dat
 #
 # Motor aliases
 !include mtr_aliases.dat
@@ -49,8 +61,8 @@
 #
 ######################### TIMERS #########################
 # Additional timer records
-dark_timer device timer timer_fanout "" "" 2 joerger_timer mcs_timer
-timer1     device timer timer_fanout "" "" 2 joerger_timer mcs_timer
+dark_timer device timer timer_fanout "" "" 0x0 2 joerger_timer mcs_timer
+timer1     device timer timer_fanout "" "" 0x0 2 joerger_timer mcs_timer
 soft_timer device timer soft_timer "" ""
 #
 #
@@ -68,7 +80,7 @@ undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.V
 #
 #
 # Pseudomotors and variables used by MX XAFS scans
-edge_energy variable net_variable net_double "" "" 18idd edge_energy.value 1 1 0
+edge_energy variable net_variable net_double "" "" id_d edge_energy.value 1 1 0
 e_minus_e0  device motor delta_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 keV energy edge_energy
 k           device motor xafs_wavenumber "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 A energy
 #

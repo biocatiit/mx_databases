@@ -1,0 +1,88 @@
+!load powerpmac.mxo
+#
+ppmac1 interface controller powerpmac "" "" 0x1
+#
+#
+# Downstream support motors
+#
+# Real motors
+#
+ds_dnst  device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.08 0 um ppmac1 15
+ds_upst  device motor powerpmac_motor "" "" 0 0 -10000000 10000000 0 -1 -1 0.08 0 um ppmac1 16
+#
+# Pseudomotors
+#
+ds_angle device motor coordinated_angle "" "" 0 0 -1e+308 1e+308 0 -1 -1 -1000.0 0 mrad tangent_arm 0x1 2 ds_upst ds_dnst 1167000 3859000 1 1 0 0
+ds_vert  device motor translation_mtr "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um 0x0 2 ds_upst ds_dnst
+#
+# Monochromator #2
+#
+# Scale factors are from the old EPICS records. In some cases these can be calculated directly
+# in other cases, there is a pivot or lever arm, so gear ratios don't give the correct result.
+# In cases where there was a separate scale factor going from the drive to stage in EPICS
+# that scale factor has been directly incorporated into the scale factor of the motor.
+#
+# Notes: theta_real, chi_real, and x2_perp_real are for homing only. theta_real goes negative as you increase the bragg angle,
+# opposite of what we wanted for that convention. x2_perp_real increases in value as the crytal moves down.
+# chi gets positive as you move it down. the x2_perp and theta variables have the correct signs and match conventions. 
+# chi has a sign that matches the old EPICS setup. Also be aware the that the theta record incorporates
+# the normal second crystal parallel and perpendicular normal motions unless normal_enabled is set to 0.
+#
+# Scale factors from epics:
+# theta, in degrees (mr):   mr->dr: 4.592778e-6, dr->sr: -1, total: -4.592778e-6
+# para, in mm (mtx):        mtx->dtx: 3.756520e-4, dtx->stx: 1, total: 3.756520e-4
+# perp, in mm (mty):        mty->dty: 1.045880e-4, dty->sty: -1.014404, total: -1.0609449e-4
+# focus, in mm (mf):        mf->df: 1.897762e-5, df->sf: 1, total: 1.897762e-5
+# twist_in, in um (mnl):    mnl->dnl: 8.815410e-3, dnl->snl: 8.48e-1, total: 7.47546768e-3
+# twist_out, in um (mnr):   mnr->dnr: 8.815410e-3, dnr->snr: 8.48e-1, total: 7.47546768e-3
+# chi, in urad (mw):        mw->dw: 2.97e-6, dw->sw: -2.06, sw->W: 1/2.625e-4, total: -2.331631e-2
+#
+#
+mono2_theta_real    device motor powerpmac_motor "MO2:mr" "" 0 10886.657 -1e+9 1e+9 0 -1 -1 4.592778e-6 0 deg ppmac1 4
+mono2_x2_para       device motor powerpmac_motor "MO2:mtx" "" 0 2000.0 -1e9 1e9 0 -1 -1 3.756520e-1 0 um ppmac1 5
+mono2_x2_perp_real  device motor powerpmac_motor "MO2:mty" "" 0 0 -1e9 1e9 0 -1 -1 1.0609448e-1 0 um ppmac1 1
+mono2_x2_perp       device motor powerpmac_motor "MO2:sty" "" 0 0 -1e9 1e9 0 -1 -1 -1.0609448e-1 0 um ppmac1 1
+mono2_focus         device motor powerpmac_motor "MO2:mf" "" 0 0 -10000000 10000000 0 -1 -1 1.897762e-2 0 um ppmac1 7
+mono2_twist_in      device motor powerpmac_motor "MO2:mnl" "" 0 0 -10000000 10000000 0 -1 -1 7.47546768e-3 0 um ppmac1 8
+mono2_twist_out     device motor powerpmac_motor "MO2:mnr" "" 0 0 -10000000 10000000 0 -1 -1 7.47546768e-3 0 um ppmac1 9
+mono2_x1_chi        device motor powerpmac_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 -2.331631e-2 0 urad ppmac1 14
+mono2_x1_chi_real   device motor powerpmac_motor "MO2:mw" "" 0 0 -10000000 10000000 0 -1 -1 2.331631e-2 0 urad ppmac1 14
+#
+# Monochromator parameters
+#
+mono2_beam_offset     variable inline double "" "" 1 1 -35000
+mono2_d_spacing       variable inline double "" "" 1 1 3.13555
+#
+# Monochromator pseudomotors
+#
+mono2_dummy_params    variable inline double "" "" 1 1 0
+#
+mono2_theta_list      variable inline record "" "" 1 4 mono2_theta_enabled mono2_theta_type mono2_dummy_params mono2_theta_records
+mono2_theta_enabled   variable inline long "" "" 1 1 1
+mono2_theta_type      variable inline long "" "" 1 1 0
+mono2_theta_records   variable inline record "" "" 1 1 mono2_theta_real
+#
+mono2_normal_list     variable inline record "" "" 1 4 mono2_normal_enabled mono2_normal_type mono2_dummy_params mono2_normal_records
+mono2_normal_enabled  variable inline long "" "" 1 1 1
+mono2_normal_type     variable inline long "" "" 1 1 4
+mono2_normal_records  variable inline record "" "" 1 2 mono2_x2_perp_real mono2_beam_offset
+#
+mono2_parallel_list    variable inline record "" "" 1 4 mono2_parallel_enabled mono2_parallel_type mono2_dummy_params mono2_parallel_records
+mono2_parallel_enabled variable inline long "" "" 1 1 1
+mono2_parallel_type    variable inline long "" "" 1 1 5
+mono2_parallel_records variable inline record "" "" 1 2 mono2_x2_para mono2_beam_offset
+#
+# Theta pseudomotor
+#
+mono2_theta           device motor monochromator "" "" 0 0 -1e3 1e3 0 -1 -1 -1 0 deg 3 mono2_theta_list mono2_normal_list mono2_parallel_list
+#
+# Twist and tune pseudomotors
+#
+mono2_twist           device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 -0.5 0.0 0.0 0.5 0.5
+mono2_tune            device motor linear_function "" "" 0 0 -1e9 1e9 0 -1 -1 22.4972 0 um 0x0 2 mono2_twist_out mono2_twist_in 0.5 0.5 0.0 0.0 0.5 0.5
+#
+# Derived pseudomotors
+#
+mono2_energy          device motor energy_motor "" "" 0 0 4800 35000 0 -1 -1 1 0 eV mono2_theta mono2_d_spacing 0.0174533
+mono2_wavelength      device motor wavelength_motor "" "" 0 0 2.6 0.35 0 -1 -1 1 0 A mono2_theta mono2_d_spacing 0.0174533
+#

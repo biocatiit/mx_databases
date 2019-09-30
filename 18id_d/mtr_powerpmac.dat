@@ -1,9 +1,9 @@
 # Powerpmac motors
 #
 # Downstream, Mono2 & BPM PowerPMAC
-powerpmac_171 server network tcpip_server "" "" 0x20000000 164.54.204.171 9727
+powerpmac_172 server network tcpip_server "" "" 0x20000000 164.54.204.172 9727
 #
-ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um powerpmac_171 ds_angle
+ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um powerpmac_172 ds_angle
 #
 #
 # Mirror & Mono1 PowerPMAC

@@ -1,7 +1,0 @@
-#                          limit   initial   push     move   final    home
-# Name    flags  #cycles direction  start    off      away   offset position
-#---------------------------------------------------------------------------
-wb_in      0x4      3       -1     2200.0    1.0     2200.0  6110.0  2200.0
-wb_bottom  0x4      3       -1    -2200.0    1.0     2200.0  5500.0 -2200.0
-wb_out     0x4      3       -1    -2200.0    1.0     2200.0  6110.0 -2200.0
-wb_top     0x4      3       -1     2200.0    1.0     2200.0  5480.0  2200.0

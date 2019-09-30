@@ -1,11 +1,30 @@
-18idd server network tcpip_server "" "" 0x0 164.54.204.188 9727
 #
-ab          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ab
-cd          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd cd
-ef          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ef
-gh          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd gh
+# This is the SRS DG645 digital delay generator 1.
 #
-ab_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ab_burst
-cd_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd cd_burst
-ef_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd ef_burst
-gh_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 18idd gh_burst
+# The device is accessed through an MX server 'id_d' which is currently located in the spare office.
+# The server definition is in the device_servers.dat file
+#
+ab          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab
+cd          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd
+ef          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef
+gh          device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh
+#
+ab_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab_burst
+cd_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd_burst
+ef_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef_burst
+gh_burst    device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh_burst
+#
+#SRS DG645 delay generator 2
+#
+# The device is accessed through an MX server 'id_d' which is currently located in the spare office.
+# The server definition is in the device_servers.dat file
+#
+ab_2       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab_2
+cd_2       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd_2
+ef_2       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef_2
+gh_2       device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh_2
+#
+ab_burst_2 device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ab_burst_2
+cd_burst_2 device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d cd_burst_2
+ef_burst_2 device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d ef_burst_2
+gh_burst_2 device pulse_generator network_pulser "" "" 0 0 0 0 0 0 id_d gh_burst_2
