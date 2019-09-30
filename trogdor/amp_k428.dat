@@ -1,4 +1,4 @@
-#gpib_server server network tcpip_server "" "" 0x20000000 164.54.204.188 9728
+#gpib_server server network tcpip_server "" "" 0x20000000 164.54.204.191 9728
 gpib_server server network tcpip_server "" "" 0x20000000 164.54.204.60 9728
 #
 # k428-10  device amplifier network_amplifier "" "" 1e5 0.0 0.03 gpib_server k428-10
