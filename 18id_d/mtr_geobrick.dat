@@ -1,0 +1,42 @@
+#
+# DeltaTau geobrick controller
+#
+# only supports one ethernet connection so this is the server for MX
+#
+# The settings below are for open loop configuration of the controller.
+# With a closed loop, the encoder resolution will set the scalilng factor.
+#
+geobrick interface controller pmac "" "" tcp 164.54.204.179 1 0x0
+#
+# White beam slit motors
+#
+#   wb1 - bottom blade          wb2 - inboard blade
+#   wb3 - top blade             wb4 - outboard blade
+#
+# The scaling for the horizontal motors is as follows:
+#    200 steps/rev on motor shaft, 512 usteps/step
+#    46:1 gear reducer on the motor shaft
+#    1mm/rev on positioner shaft
+#    46 x 102400 = 4710400 usteps/mm
+#
+# The scaling for the vertical motors is as follows:
+#    200 steps/rev on motor shaft, 512 usteps/step
+#    1000 rev/in on Duff-Norton jack
+#    25.4 mm/in
+#    1000 x 102400 / 25.4 = 4031496 usteps/mm
+#
+wb1  device motor pmac_motor "" "" 0 -500000 -1.0e308 1.0e308 0 -1 -1 0.000247904 0 um geobrick 1 1
+wb2  device motor pmac_motor "" "" 0 -500000 -1.0e308 1.0e308 0 -1 -1 0.000212296 0 um geobrick 1 2
+wb3  device motor pmac_motor "" "" 0 -500000 -1.0e308 1.0e308 0 -1 -1 0.000247904 0 um geobrick 1 3
+wb4  device motor pmac_motor "" "" 0 -500000 -1.0e308 1.0e308 0 -1 -1 0.000212296 0 um geobrick 1 4
+#
+# The following should be used for closed loop operation of the geobrick
+# controller (once we have established the encoder pitch)
+#
+#
+#
+# This sets up pseudomotors for the slit gaps and centers
+wbv_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb1 wb3
+wbv_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb1 wb3
+wbh_center device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 1 wb4 wb2
+wbh_size   device motor slit_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 um 0x1 2 wb4 wb2
