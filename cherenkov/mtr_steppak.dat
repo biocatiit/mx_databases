@@ -119,5 +119,5 @@ inline_viewer_x  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 
 inline_viewer_y  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m22
 #
 # Coflow Wedge
-coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
-coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m20
+coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m23
+coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 -1 0 mm 18ID:e:m24
