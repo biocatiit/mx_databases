@@ -15,10 +15,11 @@ np_r device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 uni
 np_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
 np_y device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 -1 0 units vger np8
 #
-# TR SAXS
-# tr_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr1
-# tr_y device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr2
+crl_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
 #
+# TR SAXS
+#tr1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr1
+#tr2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr2
 #
 # Q8 Newport motors
 #
