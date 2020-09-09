@@ -1,0 +1,2 @@
+mar_datafile_directory variable field field_string "" "" mar.datafile_directory 0x2 1 100 /nas_data/lavender
+mar_datafile_pattern variable field field_string "" "" mar.datafile_pattern 0x2 1 100 wml_####.tif
