@@ -32,7 +32,7 @@
 !include mtr_steppak.dat
 #
 # Parker motors
-!include mtr_parker.dat
+#!include mtr_parker.dat
 #
 # Motor aliases
 !include mtr_aliases.dat
@@ -58,6 +58,8 @@
 # EPICS AVME944X digital I/O
 !include io_avme_944x.dat
 #
+# EPICS BLEPS commands
+!include io_bleps.dat
 #
 ######################### TIMERS #########################
 # Additional timer records
