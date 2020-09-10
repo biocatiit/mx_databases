@@ -9,7 +9,7 @@
 #
 #
 ######################### Detectors #########################
-!include det_pilatus.dat
+#!include det_pilatus.dat
 #
 #
 ######################### MOTORS #########################
@@ -58,6 +58,8 @@
 # EPICS AVME944X digital I/O
 !include io_avme_944x.dat
 #
+# EPICS BLEPS commands
+!include io_bleps.dat
 #
 ######################### TIMERS #########################
 # Additional timer records
