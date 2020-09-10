@@ -1,0 +1,8 @@
+dout    device digital_output soft_doutput "" "" 0
+pulser  device pulse_generator digital_output_pulser "" "" 0 0 0 0 1 1 dout 0x0
+#
+mar     device area_detector marccd "" "" 4 0x4000 0x0 "" "" "" "" "" 0x0 pulser
+mar_shutter device relay marccd_shutter "" "" mar
+mar_timer   device timer area_detector_timer "" "" mar 0
+#
+!include marccd_parameters.dat
