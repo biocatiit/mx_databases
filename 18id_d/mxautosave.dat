@@ -71,6 +71,10 @@ mx gh_burst_2.num_pulses      0x0
 mx gh_burst_2.pulse_delay     0x0
 mx gh_burst_2.function_mode   0x0
 mx gh_burst_2.trigger_mode    0x0
+mx jjc_v_center.offset   0x0
+mx jjc_v_size.offset     0x0
+mx jjc_h_center.offset   0x0
+mx jjc_h_size.offset     0x0
 mx jj1v_center.offset   0x0
 mx jj1v_size.offset     0x0
 mx jj1h_center.offset   0x0
