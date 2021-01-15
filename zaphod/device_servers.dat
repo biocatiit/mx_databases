@@ -1,0 +1,28 @@
+# This is a list of servers used by mxmotor.
+#
+# Servers with only a single device, like a detector or a powerpmac,
+# should go in their device specific .dat files
+#
+# Servers that have more than one device, like the id_a and id_d server,
+# should go in this .dat file, to make it easier to access them, and also
+# so that the server doesn't give an error if you reorder mxmotor imports
+# or comment out a particular device.
+#
+# This file should be the first thing imported into mxmotor.
+#
+# Server description and locations:
+# id_a - for A hutch devices, currently on top of D hutch
+# id_d - for A and D hutch devices, currently on top of D hutch
+# id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
+id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
+#
+#Power PMACs
+# 166 - D hutch upstream
+# 171 - Formely C hutch downstream, curerntly removed
+# 172 - C hutch downstream
+# 173 - C hutch upstream
+#
+powerpmac_166 server network tcpip_server "" "" 0x20000000 164.54.204.166 9727
+# powerpmac_171 server network tcpip_server "" "" 0x20000000 164.54.204.171 9727
+powerpmac_172 server network tcpip_server "" "" 0x20000000 164.54.204.172 9727
+powerpmac_173 server network tcpip_server "" "" 0x20000000 164.54.204.173 9727
