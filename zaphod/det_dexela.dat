@@ -1,0 +1,10 @@
+!include mxmotor.dat
+#
+# Force RAW instead of XDR.
+###staypuft server network tcpip_server "" "" 0x0 164.54.204.67 9727
+staypuft server network tcpip_server "" "" 0x200 164.54.204.67 9727
+dexela device area_detector network_area_detector "" "" 0 0x0 0x0 "" "" "" "" staypuft dexela
+dexela_timer device timer network_timer "" "" staypuft dexela_timer
+#
+multi_timer device timer timer_fanout "" "" 0x0 2 scaler2_timer dexela_timer
+#

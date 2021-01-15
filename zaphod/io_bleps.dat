@@ -1,0 +1,18 @@
+gate_valve_1_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV1_EPICS_OPEN.VAL
+gate_valve_2_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV2_EPICS_OPEN.VAL
+gate_valve_3_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV3_EPICS_OPEN.VAL
+gate_valve_4_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV4_EPICS_OPEN.VAL
+gate_valve_5_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV5_EPICS_OPEN.VAL
+gate_valve_6_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV6_EPICS_OPEN.VAL
+gate_valve_7_open  device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV7_EPICS_OPEN.VAL
+#
+gate_valve_1_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV1_EPICS_CLOSE.VAL
+gate_valve_2_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV2_EPICS_CLOSE.VAL
+gate_valve_3_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV3_EPICS_CLOSE.VAL
+gate_valve_4_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV4_EPICS_CLOSE.VAL
+gate_valve_5_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV5_EPICS_CLOSE.VAL
+gate_valve_6_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV6_EPICS_CLOSE.VAL
+gate_valve_7_close device digital_output epics_doutput "" "" 0 18ID:BLEPS:GV7_EPICS_CLOSE.VAL
+#
+bleps_fault_reset device digital_output epics_doutput "" "" 0 18ID:BLEPS:FAULT_RESET.VAL
+bleps_trip_reset device digital_output epics_doutput "" "" 0 18ID:BLEPS:TRIP_RESET.VAL
