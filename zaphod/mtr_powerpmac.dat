@@ -1,0 +1,94 @@
+# #############################################################
+#  D-Hutch Upstream Positioners, PowerPMAC .166
+#
+# Faulhaber motors for the wedge are as follows
+#  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
+#     159:1 gear reducer                         246:1 gear reducer
+#     +2.54 mm/lead screw rev                    +0.9205 mm/lead screw rev
+w1x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 w1x
+w1y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000058467 0 mm powerpmac_166 w1y
+#
+# Faulhaber motors for positioner 1 are as follows
+#  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
+#     159:1 gear reducer                         159:1 gear reducer
+#     +2.54 mm/lead screw rev                    +2.54 mm/lead screw rev
+#p1x device motor network_motor "" "" 0 0 -1e7 1e7 0 -1 -1 +0.000249607 0 mm powerpmac_166 p1x
+#p1y device motor network_motor "" "" 0 0 -1e7 1e7 0 -1 -1 -0.000249607 0 mm powerpmac_166 p1y
+inline_viewer_x device motor network_motor "" "" 0 0 -1e7 1e7 0 -1 -1 +0.000249607 0 mm powerpmac_166 p1x
+inline_viewer_y device motor network_motor "" "" 0 0 -1e7 1e7 0 -1 -1 -0.000249607 0 mm powerpmac_166 p1y
+#
+# positioner 3 is in server slot 2 (CUS 2017_10_16)
+#
+#p2x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps powerpmac_166 p3x
+#p2y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps powerpmac_166 p3y
+#
+# Faulhaber motors for positioner 3 are as follows
+#  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
+#     159:1 gear reducer                         159:1 gear reducer
+#     +2.54 mm/lead screw rev                    -2.54 mm/lead screw rev
+p3x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000249607 0 mm powerpmac_166 p2x
+p3y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 p2y
+#
+# Faulhaber motors for IUCR stage (not yet calibrated)
+#
+rock device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 rock
+roll device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 roll
+#
+#
+# #############################################################
+# Downstream support and Mono2 on PowerPMAC .172 (formerly .171)
+#
+# Usable motors for Downstream Support
+#
+ds_upst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_172 ds_upst
+ds_dnst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_172 ds_dnst
+ds_vert    device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um powerpmac_172 ds_vert
+#
+# The coordinated_angle pseudomotor is used to compute the positions of
+# the downstream angle.  The segmented_move pseudomotor is used to break
+# up the move into a bunch of small moves. Base record now on the powerpmac_172
+# server
+#
+ds_angle   device motor network_motor "" "" 0 0 -1e+308 1e+308 0 -1 -1 1 0 um powerpmac_172 ds_angle
+#
+#
+# #############################################################
+# Mirror, Mono1, and BPM on PowerPMAC .173
+#
+# Mirror motors on powerpmac_173
+#
+# Real mirror motors
+#
+mi_upst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_173 mirror_upst
+mi_dnst    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_173 mirror_dnst
+mi_bendu   device motor network_motor "" "" 0 -40 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_173 mirror_bend_upst
+mi_bendd   device motor network_motor "" "" 0 -40 -1e+07 1e+07 0 -1 -1 1 0 um powerpmac_173 mirror_bend_dnst
+#
+# Pseudo mirror motors
+#
+mi_angle   device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 mrad powerpmac_173 mirror_angle
+mi_vert    device motor network_motor "" "" 0 0 -5e+08 5e+08 0 -1 -1 1 0 um powerpmac_173 mirror_vert
+mi_focus   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps powerpmac_173 mirror_focus
+mi_ellip   device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 steps powerpmac_173 mirror_ellip
+#
+#
+# BPM Motors
+#
+# Need bpm_v_real to account for change in direction and limit switch polarities during homing
+#
+bpm_v_real    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_173 bpm_v_real
+bpm_v    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_173 bpm_v
+bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerpmac_173 bpm_h
+#
+#
+#
+# #############################################################
+# Monochromator 1 and 2 motors
+#
+!include mtr_powerpmac_monos.dat
+#
+#
+#
+# BioCAT beamline angle.
+#
+bl_angle  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mrad id_d bl_angle

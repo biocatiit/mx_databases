@@ -1,0 +1,20 @@
+#                          limit   initial   push     move   final    home
+# Name    flags  #cycles direction  start    off      away   offset position
+#---------------------------------------------------------------------------
+# NOTE: need to change to using the following motors:
+#
+mi_upst    0x4     4         1     -2500.0  -1.0   -1250.0  -9284.9   0.0
+mi_dnst    0x4     4         1     -2500.0  -1.0   -1250.0  -8504.0   0.0
+ds_upst    0x4     4         1     -4000.0  -2.0   -2000.0  -3880.0   0.0
+ds_dnst    0x4     4         1     -4000.0  -2.0   -2000.0  -3512.6   0.0
+#
+# They are properly calibrated in real units and need to be tested the next
+# time we need to home the motors 
+#
+# The following are the parameters for the raw motors in steps.  These need to
+# be removed from the MX database to avoid confusion.
+#
+#MI:my1     0x4     4         1   -500000.0  -200.0 -250000.0 -1041276.0   0.0
+#MI:my2     0x4     4         1   -500000.0  -200.0 -250000.0  -805264.0   0.0
+#DN:my1     0x4     4         1    -50000.0   -20.0  -25000.0   -48499.3   0.0
+#DN:my2     0x4     4         1    -50000.0   -20.0  -25000.0   -43907.2   0.0
