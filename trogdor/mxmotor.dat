@@ -61,6 +61,9 @@
 # EPICS BLEPS commands
 !include io_bleps.dat
 #
+# EPICS LabJack T4 digital I/O (new I/O board)
+!include io_labjack_t4.dat
+#
 ######################### TIMERS #########################
 # Additional timer records
 dark_timer device timer timer_fanout "" "" 0x0 2 joerger_timer mcs_timer

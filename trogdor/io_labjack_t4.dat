@@ -1,0 +1,34 @@
+#
+di_0   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI0.VAL
+di_1   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI1.VAL
+di_2   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI2.VAL
+di_3   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI3.VAL
+di_4   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI4.VAL
+di_5   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI5.VAL
+di_6   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI6.VAL
+di_7   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI7.VAL
+di_8   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI8.VAL
+di_9   device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI9.VAL
+di_10  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI10.VAL
+di_11  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI11.VAL
+di_12  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI12.VAL
+di_13  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI13.VAL
+di_14  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI14.VAL
+di_15  device digital_input epics_dinput "" "" 0 18ID:LJT4:3:DI15.VAL
+#
+do_0  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO0.VAL
+do_1  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO1.VAL
+do_2  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO2.VAL
+do_3  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO3.VAL
+do_4  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO4.VAL
+do_5  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO5.VAL
+do_6  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO6.VAL
+do_7  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO7.VAL
+do_8  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO8.VAL
+do_9  device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO9.VAL
+do_10 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO10.VAL
+do_11 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO11.VAL
+do_12 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO12.VAL
+do_13 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO13.VAL
+do_14 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO14.VAL
+do_15 device digital_output epics_doutput "" "" 0 18ID:LJT4:2:DO15.VAL
