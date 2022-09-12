@@ -25,18 +25,17 @@
 # Newport motors
 !include mtr_newport.dat
 #
-# EPICS BioCAT PMAC motors
-#!include mtr_pmac.dat
-#
 # EPICS Step-pack motors.
 !include mtr_steppak.dat
 #
 # Parker motors
-#!include mtr_parker.dat
+!include mtr_parker.dat
 #
 # Motor aliases
 !include mtr_aliases.dat
 #
+# DTU experiment pseudo tilt motor
+!include mtr_dtu_stage.dat
 #
 ######################### SCALERS #########################
 # Struck multichannel scaler
@@ -61,7 +60,7 @@
 # EPICS BLEPS commands
 !include io_bleps.dat
 #
-# EPICS LabJack T4 digital I/O
+# EPICS LabJack T4 digital I/O (new I/O board)
 !include io_labjack_t4.dat
 #
 ######################### TIMERS #########################
@@ -92,6 +91,3 @@ undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.V
 #
 # Test motor record
 # test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000
-#
-# Uncommenting the following causes an MX breakpoint to be invoked.
-##!break
