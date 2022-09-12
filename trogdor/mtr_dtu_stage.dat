@@ -1,0 +1,10 @@
+#
+# Server is defined in device_servers.dat
+#
+# Tilt stage for dtu.dk
+#
+#
+# Pseudomotor
+#
+dtu_stage  device motor network_motor "" "" 0 0 -1e9 1e9 0 -1 -1 1 0 deg id_d dtu_stage
+#
