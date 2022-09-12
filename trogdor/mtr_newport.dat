@@ -1,11 +1,10 @@
-vger server network tcpip_server "" "" 0x0 164.54.204.60 9727
 #
 # C8 Newport motors
 #
 np1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np1
 np2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np2
-# np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np3
-# np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
+np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np3
+np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
 np5 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
 np6 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
 np7 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
@@ -16,6 +15,8 @@ np_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 uni
 np_y device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 -1 0 units vger np8
 #
 crl_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
+#
+sample_tilt device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
 #
 # TR SAXS
 #tr1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr1
@@ -31,3 +32,4 @@ crl_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 un
 # np14 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np14
 # np15 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np15
 # np16 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np16
+#

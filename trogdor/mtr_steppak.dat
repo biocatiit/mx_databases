@@ -124,7 +124,7 @@ bs_h        device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:
 crl_yaw             device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m23
 crl_tilt            device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m39
 crl_y                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m20
-crl_x                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
+#crl_x                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
 #
 # Camera and guard slit motors
 #inline_viewer_x  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m21
@@ -137,3 +137,7 @@ coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:
 # Xenocs coll. support stage
 xcol_sup_x	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
 xcol_sup_y	device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m20
+#
+# Dtu tilt
+sample_phi device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
+#
