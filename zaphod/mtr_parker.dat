@@ -1,13 +1,13 @@
 # Parker motors
 #
-parker_6k server network tcpip_server "" "" 0x20000000 164.54.204.72 9727
+
 #
 # X-Y Translation stage
 #
-xy_x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k xy_horz
-xy_y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k xy_vert
+parker_x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k xy_horz
+parker_y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k xy_vert
 #
 # Wedge
 #
-wedge_x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_horz
-wedge_y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_vert
+#wedge_x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_horz
+#wedge_y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_vert

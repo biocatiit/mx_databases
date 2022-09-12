@@ -26,7 +26,7 @@
 !include mtr_newport.dat
 #
 # EPICS BioCAT PMAC motors
-!include mtr_pmac.dat
+#!include mtr_pmac.dat
 #
 # EPICS Step-pack motors.
 !include mtr_steppak.dat
@@ -92,3 +92,6 @@ undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.V
 #
 # Test motor record
 # test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000
+#
+# Uncommenting the following causes an MX breakpoint to be invoked.
+##!break

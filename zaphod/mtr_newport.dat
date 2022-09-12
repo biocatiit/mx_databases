@@ -1,4 +1,4 @@
-vger server network tcpip_server "" "" 0x0 164.54.204.60 9727
+vger server network tcpip_server "" "" 0x100000 164.54.204.60 9727
 #
 # C8 Newport motors
 #
