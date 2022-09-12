@@ -3,10 +3,10 @@
 #---------------------------------------------------------------------------
 # NOTE: need to change to using the following motors:
 #
-#mi_upst    0x4     3         1     -2500.0  -1.0   -1250.0  -9310.3   0.0
+mi_upst    0x4     3         1     -2500.0  -1.0   -1250.0  -9310.3   0.0
 mi_dnst    0x4     3         1     -2500.0  -1.0   -1250.0  -8529.4   0.0
 #ds_upst    0x4     3         1       0.0     -2.0   -2000.0  -4057.8   0.0
-#ds_dnst    0x4     3         1      0.0     -2.0   -2000.0  -3525.6   0.0
+#ds_dnst    0x4     3         1      0.0     -2.0   -1000.0  -3525.6   0.0
 #
 # They are properly calibrated in real units and need to be tested the next
 # time we need to home the motors 
