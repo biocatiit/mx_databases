@@ -5,8 +5,8 @@
 #  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
 #     159:1 gear reducer                         246:1 gear reducer
 #     +2.54 mm/lead screw rev                    +0.9205 mm/lead screw rev
-w1x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 w1x
-w1y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000058467 0 mm powerpmac_166 w1y
+#w1x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 w1x
+#w1y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000058467 0 mm powerpmac_166 w1y
 #
 # Faulhaber motors for positioner 1 are as follows
 #  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
@@ -26,13 +26,13 @@ inline_viewer_y device motor network_motor "" "" 0 0 -1e7 1e7 0 -1 -1 -0.0002496
 #  x: 64 encoder ticks per motor rev          y: 64 encoder ticks per motor rev
 #     159:1 gear reducer                         159:1 gear reducer
 #     +2.54 mm/lead screw rev                    -2.54 mm/lead screw rev
-p3x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000249607 0 mm powerpmac_166 p2x
-p3y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 p2y
+#p3x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 +0.000249607 0 mm powerpmac_166 p2x
+#p3y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 -0.000249607 0 mm powerpmac_166 p2y
 #
 # Faulhaber motors for IUCR stage (not yet calibrated)
 #
-rock device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 rock
-roll device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 roll
+#rock device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 rock
+#roll device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 urad powerpmac_166 roll
 #
 #
 # #############################################################

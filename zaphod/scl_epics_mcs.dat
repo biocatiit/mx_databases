@@ -1,7 +1,11 @@
 #
 # Purpose: SiS 3820 multichannel scaler records
 #
+# Older definition:
 sis3820    device mcs epics_mcs "" "" 32 15000 "" 0 0 mcs_timer 18ID:mcs:mca "18ID:mcs:" 0x4 32 1
+#
+# Current definition:
+#sis3820    device mcs epics_mcs "" "" 32 15000 0 "" 0 0 mcs_timer 18ID:mcs:mca "18ID:mcs:" 0x4 32 1 0 0.001
 mcs_timer  device timer mcs_timer "" "" sis3820
 #
 # Scalers
