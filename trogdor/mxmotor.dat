@@ -38,7 +38,7 @@
 !include mtr_aliases.dat
 #
 # DTU experiment pseudo tilt motor
-!include mtr_dtu_stage.dat
+#!include mtr_dtu_stage.dat
 #
 ######################### SCALERS #########################
 # Struck multichannel scaler
