@@ -9,7 +9,7 @@
 #
 #
 ######################### Detectors #########################
-#!include det_pilatus.dat
+!include det_pilatus.dat
 #
 #
 ######################### MOTORS #########################
@@ -60,6 +60,9 @@
 #
 # EPICS BLEPS commands
 !include io_bleps.dat
+#
+# EPICS LabJack T4 digital I/O
+!include io_labjack_t4.dat
 #
 ######################### TIMERS #########################
 # Additional timer records

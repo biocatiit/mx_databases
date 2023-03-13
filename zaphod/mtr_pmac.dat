@@ -1,0 +1,46 @@
+#
+# Monochromator 2
+#
+#mono2_energy        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 keV  18ID: MO2: En:  MOEn 24XYZ4  E:  0.1 0.1
+#mono2_wavelength    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 A    18ID: MO2: En:  MOEn 24XYZ4  L:  0.1 0.1
+#mono2_tune          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 N:  0.1 0.1
+#mono2_twist         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Tn:  MOTn 28XYUV4 S:  0.1 0.1
+#mono2_yaw           device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 urad 18ID: MO2: Yw:  MOYw 20XU4   W:  0.1 0.1
+#mono2_focus         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MO2: Fo:  MOFo 16X4    F:  0.1 0.1
+#
+# Table position
+#
+# table_y_base        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  YB: 0.1 0.1
+# table_x             device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  St:  TBSt 24XYZ4  X:  0.1 0.1
+# table_angle         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  St:  TBSt 24XYZ4  A:  0.1 0.1
+# table_y_fine        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: TB:  Ps:  TBPs 24XYZ4  Y:  0.1 0.1
+# table_pitch         device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  P:  0.1 0.1
+# table_roll          device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mrad 18ID: TB:  Ps:  TBPs 24XYZ4  R:  0.1 0.1
+#
+# Huber Slits
+#
+##huber_x_center      device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: HS:  Ah:  HSAh 20XY4   XC: 0.1 0.1
+##huber_x_size        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: HS:  Ah:  HSAh 20XY4   XS: 0.1 0.1
+##huber_y_center      device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: HS:  Av:  HSAv 20XY4   YC: 0.1 0.1
+##huber_y_size        device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: HS:  Av:  HSAv 20XY4   YS: 0.1 0.1
+#
+# Multilayer Analyzer
+#
+##multilayer_size     device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MA:  St:  MASt 20XY4   S:  0.1 0.1
+##multilayer_angle    device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MA:  St:  MASt 20XY4   A:  0.1 0.1
+#
+# Goniometer Head
+#
+##goniometer_x1       device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: GH:  Ps:  GHPs 20XY4   X1: 0.1 0.1
+##goniometer_x2       device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: GH:  Ps:  GHPs 20XY4   X2: 0.1 0.1
+#
+# Modular Drives
+#
+##modular1            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax1: MDAx 15X3    d1: 0.1 0.1
+##modular2            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax2: MDAx 15X3    d2: 0.1 0.1
+##modular3            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax3: MDAx 15X3    d3: 0.1 0.1
+##modular4            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax4: MDAx 15X3    d4: 0.1 0.1
+##modular5            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax5: MDAx 15X3    d5: 0.1 0.1
+##modular6            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax6: MDAx 15X3    d6: 0.1 0.1
+##modular7            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax7: MDAx 15X3    d7: 0.1 0.1
+##modular8            device motor epics_pmac_biocat "" "" 0 0 -1000000 1000000 0 -1 -1 1 0 mm   18ID: MD:  Ax8: MDAx 15X3    d8: 0.1 0.1
