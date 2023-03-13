@@ -1,0 +1,23 @@
+#
+# Parker 6k motors on 'thestuff'
+#
+parker_6k server network tcpip_server "" "" 0x100000 164.54.204.72 9727
+#
+dtu_x device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_horz
+dtu_y device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm parker_6k wedge_vert
+#
+# Newport XPS D-8 motor on 'vger'
+#
+vger server network tcpip_server "" "" 0x100000 164.54.204.60 9727
+#
+dtu_tilt device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 deg vger np4
+#
+delta_l variable inline double "" "" 1 1 10.0
+#
+# OMS VME motor on EPICS
+#
+dtu_phi device motor epics_motor "" "" 0 0 -1e07 1e07 0 -1 -1 1.0 0.0 deg 18ID:e:m19
+#
+# dtu.dk stage pseudomotor.
+#
+dtu_stage device motor dtu_stage "" "" 0 0 -1e07 1e07 0 -1 -1 1.0 0.0 deg delta_l dtu_tilt dtu_x dtu_y dtu_phi

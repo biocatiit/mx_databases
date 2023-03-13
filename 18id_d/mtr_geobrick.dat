@@ -6,7 +6,16 @@
 # The settings below are for open loop configuration of the controller.
 # With a closed loop, the encoder resolution will set the scalilng factor.
 #
-geobrick interface controller pmac "" "" tcp 164.54.204.179 1 0x0
+##geobrick interface controller pmac "" "" tcp 164.54.204.179 1 0x0
+#
+# 2022-07-18 Turned on PMAC command debugging by changing 0x0 to 0x1.
+#
+# 2023-01-30 (W. Lavender) The string field immediately after the 'tcp' field
+#     now contains two values.  The first is the IP address of the Geobrick,
+#     while the second one (set to 5.0 below) is MX's receive timeout in
+#     seconds for TCP/IP communication.
+#
+geobrick interface controller pmac "" "" tcp "164.54.204.179 5.0" 1 0x0
 #
 # White beam slit motors
 #
