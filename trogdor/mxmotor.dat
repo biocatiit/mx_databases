@@ -9,7 +9,7 @@
 #
 #
 ######################### Detectors #########################
-#!include det_pilatus.dat
+!include det_pilatus.dat
 #
 #
 ######################### MOTORS #########################
