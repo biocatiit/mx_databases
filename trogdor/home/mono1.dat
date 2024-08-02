@@ -2,7 +2,7 @@
 # Name              flags  #cycles  direction    start      off         away     offset         position
 #---------------------------------------------------------------------------------------------------------
 #
-#mono1_theta_real   0x4     3           1       0.0        -0.0001     -1.0     -1.35260753      0.0               #mr
+mono1_theta_real   0x4     3           1       0.0        -0.0001     -1.0     -1.02860053      0.0               #mr
 #mono1_x1_chi_real  0x4     3          -1      -47000.0     5.0         6000.0   21746.0750657  -37657.5387104     #yaw
 #mono1_twist_in     0x4     3          -1      -900.0       1.0         900.0    1929.21110879   0.0               #mnl, left tune
 #mono1_twist_out    0x4     3          -1      -900.0       1.0         900.0    2014.33962399   0.0               #mnr, right tune
