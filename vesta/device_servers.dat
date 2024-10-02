@@ -34,12 +34,12 @@ id_d server network tcpip_server "" "" 0x0 164.54.204.187 9727
 #
 # (W. Lavender, 2024-07-26)
 #
-powerpmac_166 server network tcpip_server "" "" 0x20000400 164.54.204.166 9727
+powerpmac_166 server network tcpip_server "" "" 0x20100400 164.54.204.166 9727
 #                                                      ^
 # powerpmac_171 server network tcpip_server "" "" 0x20000000 164.54.204.171 9727
-powerpmac_172 server network tcpip_server "" "" 0x20000400 164.54.204.172 9727
+powerpmac_172 server network tcpip_server "" "" 0x20100400 164.54.204.172 9727
 #                                                      ^
-powerpmac_173 server network tcpip_server "" "" 0x20000400 164.54.204.173 9727
+powerpmac_173 server network tcpip_server "" "" 0x20100400 164.54.204.173 9727
 #                                                      ^
 #
 # Keithly amps
