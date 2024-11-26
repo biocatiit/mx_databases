@@ -29,7 +29,10 @@
 !include mtr_pmac.dat
 #
 # EPICS Step-pack motors.
-!include mtr_steppak.dat
+#!include mtr_steppak.dat
+#
+# EPICS Galil motors:
+!include mtr_galil.dat
 #
 # Parker motors
 #!include mtr_parker.dat
