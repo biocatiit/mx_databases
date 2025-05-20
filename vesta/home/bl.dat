@@ -5,10 +5,13 @@
 #
 #mi_upst    0x4     3         1     0.0  -1.0   -1250.0  -6553.3   0.0
 #mi_dnst    0x4     3         1     0.0  -1.0   -1250.0  -5835.4   0.0
-ds_upst    0x4     3         1       0.0     -2.0   -2000.0  -11802.6   0.0
-ds_dnst    0x4     3         1      0.0     -2.0   -1000.0  -6094.8   0.0
+ds_upst    0x4     1         1       0.0     -2.0   -2000.0  -5500   0.0
+ds_dnst    0x4     1         1      0.0     -2.0   -1000.0  -2500   0.0
 #
 #
+# APS-U surveyed/measured values that don't seem to work.
+#ds_upst    0x4     1         1       0.0     -2.0   -2000.0  -11802.6   0.0
+#ds_dnst    0x4     1         1      0.0     -2.0   -1000.0  -6094.8   0.0
 #
 #
 # # old pre-APS-U values. Preserved for now in case they're useful

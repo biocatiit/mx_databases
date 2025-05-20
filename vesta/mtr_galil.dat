@@ -52,10 +52,16 @@
 #
 ######################### ALIASES #########################
 #
+# WB slits, A hutch
+#
+wb_top     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:A1
+wb_bot     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:A2
+wb_in      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:A3
+wb_out     device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:A4
 # JJ slits, C hutch collimators
 #
 jj_c_top      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:9
-jj_c_bot      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:10
+jj_c_bot      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:13
 jj_c_in       device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:11
 jj_c_out      device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:12
 #
@@ -89,6 +95,11 @@ xenocs_ds_out  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18
 #
 # Slit pseudomotors
 #
+wb_v_size   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:WB_V:size
+wb_v_cen    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:WB_V:center
+wb_h_size   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:WB_H:size
+wb_h_cen    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_A01:WB_H:center
+#
 jj_c_v_size   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:JJ_C_V:size
 jj_c_v_cen    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:JJ_C_V:center
 jj_c_h_size   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E02:JJ_C_H:size
@@ -112,7 +123,7 @@ xenocs_ds_h_cen   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm
 # Downstream fluoresent screen
 #
 screen_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:8
-screen_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:6
+screen_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:5
 #
 # Beamstop motors
 #
@@ -131,5 +142,5 @@ crl_x                device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0
 #inline_viewer_y  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m22
 #
 # Coflow Wedge
-coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m19
-coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m20
+coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E03:21
+coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E03:23

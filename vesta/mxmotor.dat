@@ -20,7 +20,7 @@
 !include mtr_powerpmac.dat
 #
 # Geobrick motors
-!include mtr_geobrick.dat
+#!include mtr_geobrick.dat
 #
 # Newport motors
 !include mtr_newport.dat
