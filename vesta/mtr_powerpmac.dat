@@ -91,4 +91,4 @@ bpm_h    device motor network_motor "" "" 0 0 -1e+07 1e+07 0 -1 -1 1 0 mm powerp
 #
 # BioCAT beamline angle.
 #
-bl_angle  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mrad id_d bl_angle
+bl_angle  device motor network_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mrad dalek bl_angle

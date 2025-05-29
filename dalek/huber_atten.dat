@@ -1,0 +1,10 @@
+huber232 interface rs232 tcp232 "" "" 9600 8 N 1 N 0x0d0a 0x0d0a -1 0x5 164.54.204.27 1234 0x20
+huber interface controller huber_atten_server "" "" huber232 100
+a1  device relay huber_attenuator "" "" huber 1
+a2  device relay huber_attenuator "" "" huber 2
+a3  device relay huber_attenuator "" "" huber 3
+a4  device relay huber_attenuator "" "" huber 4
+a5  device relay huber_attenuator "" "" huber 5
+a6  device relay huber_attenuator "" "" huber 6
+a7  device relay huber_attenuator "" "" huber 7
+a8  device relay huber_attenuator "" "" huber 8
