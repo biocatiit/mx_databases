@@ -19,17 +19,8 @@
 # PowerPMAC motors
 !include mtr_powerpmac.dat
 #
-# Geobrick motors
-!include mtr_geobrick.dat
-#
 # Newport motors
 !include mtr_newport.dat
-#
-# EPICS BioCAT PMAC motors
-!include mtr_pmac.dat
-#
-# EPICS Step-pack motors.
-!include mtr_steppak.dat
 #
 # Parker motors
 #!include mtr_parker.dat
@@ -56,9 +47,6 @@
 ######################### DI/O and PULSE/DELAY GENERATORS #########################
 # SRS DG645 digital delay generator
 !include io_dg645.dat
-#
-# EPICS AVME944X digital I/O
-#!include io_avme_944x.dat
 #
 # EPICS BLEPS commands
 !include io_bleps.dat
