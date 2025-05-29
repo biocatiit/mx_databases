@@ -22,9 +22,6 @@
 # Newport motors
 !include mtr_newport.dat
 #
-# EPICS BioCAT PMAC motors
-!include mtr_pmac.dat
-#
 # EPICS Galil motors:
 !include mtr_galil.dat
 #

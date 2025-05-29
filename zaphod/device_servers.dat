@@ -14,8 +14,10 @@
 # id_a - for A hutch devices, currently on top of D hutch
 # id_d - for A and D hutch devices, currently on top of D hutch
 # id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
-id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
+# id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
 # id_d server network tcpip_server "" "" 0x0 164.54.204.187 9727
+# dalek - Powerpmac pseudomotors, DG645, huber attenuator
+dalek server network tcpip_server "" "" 0x20000000 164.54.204.63 9727
 #
 #Power PMACs
 # 166 - D hutch upstream
