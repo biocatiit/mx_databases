@@ -25,17 +25,23 @@
 # Newport motors
 !include mtr_newport.dat
 #
+# EPICS BioCAT PMAC motors
+!include mtr_pmac.dat
+#
 # EPICS Step-pack motors.
-!include mtr_steppak.dat
+#!include mtr_steppak.dat
+#
+# EPICS Galil motors:
+!include mtr_galil.dat
 #
 # Parker motors
-!include mtr_parker.dat
+#!include mtr_parker.dat
 #
 # Motor aliases
 !include mtr_aliases.dat
 #
 # DTU experiment pseudo tilt motor
-!include mtr_dtu_stage.dat
+#!include mtr_dtu_stage.dat
 #
 ######################### SCALERS #########################
 # Struck multichannel scaler
@@ -55,7 +61,7 @@
 !include io_dg645.dat
 #
 # EPICS AVME944X digital I/O
-!include io_avme_944x.dat
+#!include io_avme_944x.dat
 #
 # EPICS BLEPS commands
 !include io_bleps.dat
@@ -74,9 +80,9 @@ soft_timer device timer soft_timer "" ""
 #
 # Storage ring parameters
 #
-ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
-ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
-undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
+#ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
+#ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
+#undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
 #
 #
 # Phase contrast PIN diode (disabled CUS 2017-10-09)

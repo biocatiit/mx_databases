@@ -14,8 +14,8 @@
 # id_a - for A hutch devices, currently on top of D hutch
 # id_d - for A and D hutch devices, currently on top of D hutch
 # id_a server network tcpip_server "" "" 0x0 164.54.204.187 9727
-id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
-# id_d server network tcpip_server "" "" 0x0 164.54.204.187 9727
+# id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
+id_d server network tcpip_server "" "" 0x0 164.54.204.187 9727
 #
 #Power PMACs
 # 166 - D hutch upstream
@@ -23,10 +23,24 @@ id_d server network tcpip_server "" "" 0x0 164.54.204.191 9727
 # 172 - C hutch downstream
 # 173 - C hutch upstream
 #
-powerpmac_166 server network tcpip_server "" "" 0x20000000 164.54.204.166 9727
+# WARNING: The Powerpmacs use a very old version of MX, namely MX 1.5.5.  On
+# this old version of MX, communication with a big-endian CPU such as the
+# PowerPC CPUs used by the Powerpmacs made use of a special network format
+# called XDR that was invented for Sun's NFS network file sharing.  Newer
+# versions of MX dispense with the complexity of XDR and merely byteswap the
+# data being sent to the MX server.  However, there is a backward compatibility
+# flag (0x400) which can still be used to specifically request XDR format.
+# That is what I have done in the database below.
+#
+# (W. Lavender, 2024-07-26)
+#
+powerpmac_166 server network tcpip_server "" "" 0x20100400 164.54.204.166 9727
+#                                                      ^
 # powerpmac_171 server network tcpip_server "" "" 0x20000000 164.54.204.171 9727
-powerpmac_172 server network tcpip_server "" "" 0x20000000 164.54.204.172 9727
-powerpmac_173 server network tcpip_server "" "" 0x20000000 164.54.204.173 9727
+powerpmac_172 server network tcpip_server "" "" 0x20100400 164.54.204.172 9727
+#                                                      ^
+powerpmac_173 server network tcpip_server "" "" 0x20100400 164.54.204.173 9727
+#                                                      ^
 #
 # Keithly amps
 #gpib_server server network tcpip_server "" "" 0x20000000 164.54.204.191 9728

@@ -33,3 +33,12 @@ sample_tilt device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 
 # np15 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np15
 # np16 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np16
 #
+# EPICS motors
+#
+# TR-SAXS scanning motors
+trsaxs_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_TR:m1
+trsaxs_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_TR:m2
+# Beam sizing motors
+size_rot    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m6
+size_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m7
+size_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m8
