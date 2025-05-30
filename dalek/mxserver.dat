@@ -1,0 +1,7 @@
+# This server hosts powerpmac pseudomotors, DG645 contorl, and the huber attenuator
+#
+#!load epics.mxo
+#
+!include mtr_powerpmac.dat
+!include io_dg645.dat
+!include huber_atten.dat

@@ -1,0 +1,11 @@
+# Controls the huber attenuator. Each attenuator (1-8) is coded as a separate relay
+# Values of 1 mean the attenuator is in, values of 0 mean it it is out
+#
+a1  device relay network_relay "" "" dalek a1
+a2  device relay network_relay "" "" dalek a2
+a3  device relay network_relay "" "" dalek a3
+a4  device relay network_relay "" "" dalek a4
+a5  device relay network_relay "" "" dalek a5
+a6  device relay network_relay "" "" dalek a6
+a7  device relay network_relay "" "" dalek a7
+a8  device relay network_relay "" "" dalek a8

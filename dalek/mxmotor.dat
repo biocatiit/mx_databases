@@ -1,0 +1,9 @@
+dalek server network tcpip_server "" "" 0x20000000 164.54.204.63 9727
+a1  device relay network_relay "" "" dalek a1
+a2  device relay network_relay "" "" dalek a2
+a3  device relay network_relay "" "" dalek a3
+a4  device relay network_relay "" "" dalek a4
+a5  device relay network_relay "" "" dalek a5
+a6  device relay network_relay "" "" dalek a6
+a7  device relay network_relay "" "" dalek a7
+a8  device relay network_relay "" "" dalek a8

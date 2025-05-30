@@ -19,17 +19,8 @@
 # PowerPMAC motors
 !include mtr_powerpmac.dat
 #
-# Geobrick motors
-!include mtr_geobrick.dat
-#
 # Newport motors
 !include mtr_newport.dat
-#
-# EPICS BioCAT PMAC motors
-!include mtr_pmac.dat
-#
-# EPICS Step-pack motors.
-#!include mtr_steppak.dat
 #
 # EPICS Galil motors:
 !include mtr_galil.dat
@@ -60,9 +51,6 @@
 # SRS DG645 digital delay generator
 !include io_dg645.dat
 #
-# EPICS AVME944X digital I/O
-#!include io_avme_944x.dat
-#
 # EPICS BLEPS commands
 !include io_bleps.dat
 #
@@ -76,24 +64,3 @@ timer1     device timer timer_fanout "" "" 0x0 2 joerger_timer mcs_timer
 soft_timer device timer soft_timer "" ""
 #
 #
-######################### OTHER #########################
-#
-# Storage ring parameters
-#
-#ring_current  variable epics_variable epics_double "" "" S:SRcurrentAI.VAL 1 1 0
-#ring_lifetime variable epics_variable epics_double "" "" S:SRlifeTimeHrsCC.VAL 1 1 0
-#undulator_harmonic variable epics_variable epics_long "" "" ID18:HarmonicValue.VAL 1 1 0
-#
-#
-# Phase contrast PIN diode (disabled CUS 2017-10-09)
-##!include phase_contrast.dat
-#
-#
-# Pseudomotors and variables used by MX XAFS scans
-# edge_energy variable net_variable net_double "" "" id_d edge_energy.value 1 1 0
-# e_minus_e0  device motor delta_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 keV energy edge_energy
-# k           device motor xafs_wavenumber "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 A energy
-#
-#
-# Test motor record
-# test_motor device motor soft_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 0.001 0 mm 10000 0 2000
