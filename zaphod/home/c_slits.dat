@@ -1,0 +1,7 @@
+#                          limit   initial   push     move   final    home
+# Name    flags  #cycles direction  start    off      away   offset position
+#---------------------------------------------------------------------------
+#jjc_in      0x4      3       -1     0    0.001     1.0  0  0
+#jjc_out      0x4      3       1     0    0.001     1.0  0  0
+#jjc_top      0x4      3       -1     0    0.002     1.0  0  0
+#jjc_bot      0x4      3       1     0    0.002     1.0  0  0
