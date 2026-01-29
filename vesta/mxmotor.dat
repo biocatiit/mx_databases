@@ -57,6 +57,11 @@
 # EPICS LabJack T4 digital I/O (new I/O board)
 !include io_labjack_t4.dat
 #
+#
+######################### Attenuators #########################
+#!include atten_huber.dat
+#
+#
 ######################### TIMERS #########################
 # Additional timer records
 dark_timer device timer timer_fanout "" "" 0x0 2 joerger_timer mcs_timer
