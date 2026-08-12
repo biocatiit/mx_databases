@@ -20,7 +20,7 @@
 !include mtr_powerpmac.dat
 #
 # Newport motors
-!include mtr_newport.dat
+# !include mtr_newport.dat
 #
 # EPICS Galil motors:
 !include mtr_galil.dat
@@ -44,7 +44,7 @@
 #
 ######################### AMPS #########################
 # Include Keithley database
-!include amp_k428.dat
+# !include amp_k428.dat
 #
 #
 ######################### DI/O and PULSE/DELAY GENERATORS #########################
