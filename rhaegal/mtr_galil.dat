@@ -142,5 +142,7 @@ bs_h        device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_
 #inline_viewer_y  device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:e:m22
 #
 # Coflow Wedge
-coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E03:21
-coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E03:23
+coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:5
+coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:6
+# Coflow autosampler
+coflow_needle_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:35
