@@ -49,7 +49,7 @@
 #
 ######################### DI/O and PULSE/DELAY GENERATORS #########################
 # SRS DG645 digital delay generator
-!include io_dg645.dat
+#!include io_dg645.dat
 #
 # EPICS BLEPS commands
 !include io_bleps.dat
