@@ -44,7 +44,7 @@
 #
 ######################### AMPS #########################
 # Include Keithley database
-!include amp_k428.dat
+#!include amp_k428.dat
 #
 #
 ######################### DI/O and PULSE/DELAY GENERATORS #########################
