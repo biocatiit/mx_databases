@@ -146,3 +146,14 @@ coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_
 coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:6
 # Coflow autosampler
 coflow_needle_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:35
+#
+# ADC Table
+table_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:ADCTable:x
+table_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:ADCTable:y
+table_ax   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 ur 18ID:ADCTable:ax
+table_ay   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 ur 18ID:ADCTable:ay
+table_v1   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:33
+table_v2   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:34
+table_v3   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:37
+table_h1   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:35
+table_h2   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E05:36

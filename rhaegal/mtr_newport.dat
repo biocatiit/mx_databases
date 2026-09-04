@@ -1,22 +1,22 @@
 #
 # C8 Newport motors
 #
-np1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np1
-np2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np2
-np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np3
-np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
-np5 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
-np6 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
-np7 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
-np8 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np8
+#np1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np1
+#np2 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np2
+#np3 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np3
+#np4 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
+#np5 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
+#np6 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
+#np7 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
+#np8 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np8
 #
-np_r device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
-np_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
-np_y device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 -1 0 units vger np8
+#np_r device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np6
+#np_x device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np7
+#np_y device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 -1 0 units vger np8
 #
-crl_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
+#crl_z device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np5
 #
-sample_tilt device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
+#sample_tilt device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger np4
 #
 # TR SAXS
 #tr1 device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 1 0 units vger tr1
@@ -39,6 +39,9 @@ sample_tilt device motor network_motor "" "" 0 0 -1000000000 1000000000 0 -1 -1 
 trsaxs_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_TR:m1
 trsaxs_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_TR:m2
 # Beam sizing motors
-size_rot    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m6
-size_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m7
-size_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m8
+size_rot    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m1
+size_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m2
+size_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m3
+# Generic scanning motors
+#scan_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m3
+#scan_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_Newport_D:m4
