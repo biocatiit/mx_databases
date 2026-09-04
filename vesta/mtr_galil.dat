@@ -144,6 +144,7 @@ bs_h        device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_
 coflow_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:5
 coflow_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID_DMC_E01:6
 #
+# ADC Table
 table_x    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:ADCTable:x
 table_y    device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 mm 18ID:ADCTable:y
 table_ax   device motor epics_motor "" "" 0 0 -1e+09 1e+09 0 -1 -1 1 0 ur 18ID:ADCTable:ax
